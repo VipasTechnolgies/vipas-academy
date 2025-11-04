@@ -5,7 +5,6 @@ import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import toast, { Toaster } from "react-hot-toast";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
-import Footer from "../components/Footer";
 import {
   educationOptions,
   planOfFutureOptions,
@@ -334,9 +333,7 @@ export default function ContactPage() {
       </section>
       <footer className="bg-gray-900 text-gray-300 mt-16">
         <div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
-            <Footer />
-          </div>
+      
         </div>
       </footer>
     </>
