@@ -17,6 +17,7 @@ import {
 } from "../types/form";
 import { contactFormSchema } from "../schemas/contact";
 
+
 export default function ContactPage() {
   const [loading, setLoading] = useState(false);
 
@@ -33,10 +34,10 @@ export default function ContactPage() {
       name: "",
       contact: "",
       email: "",
-      education: "" as any,
-      planOfFuture: "" as any,
-      careerPath: "" as any,
-      inquiryType: "" as any,
+      education: "" ,
+      planOfFuture: "" ,
+      careerPath: "",
+      inquiryType: "" ,
     },
   });
 
@@ -92,7 +93,7 @@ export default function ContactPage() {
   return (
     <>
       <Navbar />
-      <Toaster position="top-center" reverseOrder={false} />
+      <Toaster />
 
       {/* Hero Section */}
       <section

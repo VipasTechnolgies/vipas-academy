@@ -162,7 +162,7 @@ export default function Footer() {
         >
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-gray-400 text-sm text-center md:text-left">
-              © 2024 Vipas Academy. All rights reserved.
+              © 2025 Vipas Academy. All rights reserved.
             </p>
             <div className="flex items-center gap-4">
               {socialLinks.map((social) => {
