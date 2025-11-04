@@ -158,7 +158,7 @@ export default function ContactPage() {
               className="bg-gray-50 p-8 rounded-xl shadow-md"
             >
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Send us a Message
+                Enroll Here
               </h3>
 
               {/* Name */}
