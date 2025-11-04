@@ -5,7 +5,6 @@ import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import toast, { Toaster } from "react-hot-toast";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import {
   educationOptions,
@@ -34,10 +33,10 @@ export default function ContactPage() {
       name: "",
       contact: "",
       email: "",
-      education: "" ,
-      planOfFuture: "" ,
-      careerPath: "",
-      inquiryType: "" ,
+      education: "" as any,
+      planOfFuture: "" as any,
+      careerPath: "" as any,
+      inquiryType: "" as any,
     },
   });
 
