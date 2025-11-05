@@ -485,7 +485,7 @@ export default function DataAnalyticsCourseDetails() {
                   {showModal && (
                     <DownloadSyllabusModal
                       onClose={() => setShowModal(false)}
-                      fileName=".pdf" // 👈 change this dynamically per course
+                      fileName="Data-Analytics.pdf" // 👈 change this dynamically per course
                       displayName="SAP Data_Analytics Course.pdf" // optional pretty name
                     />
                   )}

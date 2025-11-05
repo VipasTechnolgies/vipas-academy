@@ -402,7 +402,7 @@ export default function SAPPSDetails() {
                   {showModal && (
                     <DownloadSyllabusModal
                       onClose={() => setShowModal(false)}
-                      fileName="SAPPS-Course.pdf" // 👈 change this dynamically per course
+                      fileName="SAP-PS.pdf" // 👈 change this dynamically per course
                       displayName="SAP_Project_Systems.pdf" // optional pretty name
                     />
                   )}
