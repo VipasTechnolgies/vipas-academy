@@ -12,45 +12,42 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const navLinks = [
-    { name: "Home", path: "/", sectionId: "home" },
-    { name: "About", path: "/", sectionId: "about" },
-    { name: "Courses", path: "/courses" },
-    { name: "Why Choose Us", path: "/", sectionId: "study" },
-    { name: "Testimonials", path: "/", sectionId: "testimonials" },
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Courses", href: "/courses" },
+    { name: "Why Choose Us", href: "#study" },
+    { name: "Testimonials", href: "#testimonials" },
   ];
 
-  const goToSection = (path: string, sectionId?: string) => {
+  const handleLinkClick = (href: string) => {
     setIsOpen(false);
-    if (pathname !== path) {
-      router.push(path);
-      if (sectionId) {
-        setTimeout(() => {
-          const element = document.getElementById(sectionId);
-          element?.scrollIntoView({ behavior: "smooth" });
-        }, 300);
+
+    // ✅ If it's a section link like #about
+    if (href.startsWith("#")) {
+      if (pathname === "/") {
+        // Smooth scroll directly on home page
+        const el = document.querySelector(href);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      } else {
+        // Go to home page with hash link (Next.js preserves #)
+        router.push(`/${href}`);
       }
-    } else if (sectionId) {
-      const element = document.getElementById(sectionId);
-      element?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // Normal navigation to another page (like /courses)
+      router.push(href);
     }
   };
 
-  const goToPage = (path: string) => {
-    setIsOpen(false);
-    router.push(path);
-  };
-
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 font-sora text-md bg-white/95 backdrop-blur-sm shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 font-sora text-md bg-white/95 backdrop-blur-sm shadow-sm overflow-x-hidden">
       <div className="container mx-auto px-8 sm:px-12 lg:px-20">
-        <div className="flex items-center justify-between h-150">
-          {/* ✅ Logo Section */}
+        <div className="flex items-center justify-between h-24">
+          {/* Logo */}
           <div
-            className="flex items-center space-x-3 cursor-pointer pl-20"
-            onClick={() => goToPage("/")}
+            className="flex items-center space-x-3 cursor-pointer"
+            onClick={() => handleLinkClick("/")}
           >
-            {/* Logo Image */}
-            <div className="relative w-24 h-24">
+            <div className="relative w-20 h-20">
               <Image
                 src="/vipas-logo.png"
                 alt="Vipas Academy Logo"
@@ -59,32 +56,21 @@ export default function Navbar() {
                 priority
               />
             </div>
-            
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) =>
-              link.sectionId ? (
-                <button
-                  key={link.name}
-                  onClick={() => goToSection(link.path, link.sectionId)}
-                  className="text-gray-700 hover:text-blue-900 transition-colors duration-300 font-medium"
-                >
-                  {link.name}
-                </button>
-              ) : (
-                <button
-                  key={link.name}
-                  onClick={() => goToPage(link.path)}
-                  className="text-gray-700 hover:text-blue-900 transition-colors duration-300 font-medium"
-                >
-                  {link.name}
-                </button>
-              )
-            )}
+            {navLinks.map((link) => (
+              <button
+                key={link.name}
+                onClick={() => handleLinkClick(link.href)}
+                className="text-gray-700 hover:text-blue-900 transition-colors duration-300 font-medium"
+              >
+                {link.name}
+              </button>
+            ))}
             <button
-              onClick={() => goToPage("/contact")}
+              onClick={() => handleLinkClick("/contact")}
               className="bg-gradient-to-r from-blue-900 to-blue-900 text-white px-6 py-2.5 rounded-full font-medium hover:shadow-lg transition-all duration-300 hover:scale-105"
             >
               Contact Us
@@ -108,27 +94,17 @@ export default function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden pb-4"
           >
-            {navLinks.map((link) =>
-              link.sectionId ? (
-                <button
-                  key={link.name}
-                  onClick={() => goToSection(link.path, link.sectionId)}
-                  className="block w-full text-left py-3 text-gray-700 hover:text-blue-900 transition-colors duration-300"
-                >
-                  {link.name}
-                </button>
-              ) : (
-                <button
-                  key={link.name}
-                  onClick={() => goToPage(link.path)}
-                  className="block w-full text-left py-3 text-gray-700 hover:text-blue-900 transition-colors duration-300"
-                >
-                  {link.name}
-                </button>
-              )
-            )}
+            {navLinks.map((link) => (
+              <button
+                key={link.name}
+                onClick={() => handleLinkClick(link.href)}
+                className="block w-full text-left py-3 text-gray-700 hover:text-blue-900 transition-colors duration-300"
+              >
+                {link.name}
+              </button>
+            ))}
             <button
-              onClick={() => goToSection("/", "contact")}
+              onClick={() => handleLinkClick("/contact")}
               className="w-full mt-3 bg-gradient-to-r from-blue-900 to-blue-900 text-white px-6 py-2.5 rounded-full font-medium"
             >
               Contact Us
