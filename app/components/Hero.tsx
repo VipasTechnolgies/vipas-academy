@@ -1,17 +1,19 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { Play, Users, BookOpen, Award } from 'lucide-react';
-import { fadeInUp, fadeInLeft, fadeInRight } from '@/lib/animations';
+import { motion } from "framer-motion";
+import { Play, Users, BookOpen, Award } from "lucide-react";
+import { fadeInUp, fadeInLeft, fadeInRight } from "@/lib/animations";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-
 export default function Hero() {
-    const router = useRouter();
+  const router = useRouter();
 
   return (
-    <section id="home" className="relative mb-10 min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-50 pt-20">
+    <section
+      id="home"
+      className="relative mb-10 min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-50 pt-20"
+    >
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
@@ -39,7 +41,7 @@ export default function Hero() {
               variants={fadeInLeft}
               className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight"
             >
-              Shape 
+              Shape
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-900">
                 What&apos;s Next
               </span>
@@ -53,9 +55,10 @@ export default function Hero() {
               transition={{ delay: 0.2 }}
               className="text-lg text-gray-800 mb-8 leading-relaxed"
             >
-              At Vipas Academy, we don&apos;t just teach technology - we transform learners into innovators. 
+              At Vipas Academy, we don&apos;t just teach technology - we
+              transform learners into innovators.
             </motion.p>
-             <motion.p
+            <motion.p
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -63,9 +66,10 @@ export default function Hero() {
               transition={{ delay: 0.2 }}
               className="text-lg text-gray-800 mb-8 leading-relaxed text-justify"
             >
-              Our training is powered by expert mentors, hands-on projects, and career-driven learning paths. 
-              Whether you&apos;re beginning your journey in IT or upgrading your skills for the next leap, 
-              we help you Shape What&apos;s Next in the world of technology. 
+              Our training is powered by expert mentors, hands-on projects, and
+              career-driven learning paths. Whether you&apos;re beginning your
+              journey in IT or upgrading your skills for the next leap, we help
+              you Shape What&apos;s Next in the world of technology.
             </motion.p>
 
             <motion.div
@@ -77,22 +81,18 @@ export default function Hero() {
               className="flex flex-wrap gap-4 mb-12"
             >
               <button
-      onClick={() => router.push("/courses")}
-      className="bg-gradient-to-r from-teal-500 to-teal-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center gap-2"
-    >
-      Explore Courses
-      <Play className="w-5 h-5" />
-    </button>
+                onClick={() => router.push("/courses")}
+                className="bg-gradient-to-r from-teal-500 to-teal-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center gap-2"
+              >
+                Explore Courses
+                <Play className="w-5 h-5" />
+              </button>
               <button
-  onClick={() => {
-    const el = document.querySelector("#contact");
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  }}
-  className="bg-blue-900 text-white px-8 py-4 rounded-xl font-semibold border-2 border-blue-900 hover:border-blue-900 hover:text-white transition-all duration-300"
->
-  Enroll Now
-</button>
-
+                   onClick={() => router.push("/contact")}
+                className="bg-blue-900 text-white px-8 py-4 rounded-xl font-semibold border-2 border-blue-900 hover:border-blue-900 hover:text-white transition-all duration-300"
+              >
+                Enroll Now
+              </button>
             </motion.div>
 
             <motion.div
@@ -102,9 +102,7 @@ export default function Hero() {
               variants={fadeInUp}
               transition={{ delay: 0.4 }}
               className="grid grid-cols-3 gap-6"
-            >
-            
-            </motion.div>
+            ></motion.div>
           </div>
 
           <motion.div
