@@ -94,7 +94,7 @@ export default function RelatedCourses() {
         <Clock className="w-4 h-4" />
         <span>{course.course_duration}</span>
       </div>
-      <span>{course.students.toLocaleString()} Students</span>
+  
     </div>
   </div>
 </Link>

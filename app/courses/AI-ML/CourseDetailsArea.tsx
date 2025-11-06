@@ -729,7 +729,7 @@ const [showModal, setShowModal] = useState(false);
                     <div>
                       <p className="text-gray-500 text-sm">Send Message</p>
                       <p className="text-gray-900 font-semibold text-base break-all">
-                        vipasacademy@gmail.com
+                        vipasacademy1@gmail.com
                       </p>
                     </div>
                   </div>

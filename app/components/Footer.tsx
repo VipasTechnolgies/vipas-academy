@@ -2,7 +2,6 @@
 
 import { useRouter, usePathname } from "next/navigation";
 import {
-  BookOpen,
   Mail,
   Phone,
   MapPin,
@@ -27,10 +26,11 @@ export default function Footer() {
     { name: "Contact", href: "#contact" },
   ];
 
+  // ✅ Fixed absolute paths for courses
   const courses = [
-    { name: "Web Development", href: "courses/fullstack-development" },
-    { name: "Data Analytics", href: "courses/data-analytics" },
-    { name: "SAP Courses", href: "courses/sales-distribution" },
+    { name: "Web Development", href: "/courses/fullstack-development" },
+    { name: "Data Analytics", href: "/courses/data-analytics" },
+    { name: "SAP Courses", href: "/courses/sales-distribution" },
   ];
 
   const socialLinks = [
@@ -40,25 +40,30 @@ export default function Footer() {
       href: "https://www.instagram.com/vipas_academy?igsh=cTlyeDFkYXBmNWpq",
       label: "Instagram",
     },
-    { icon: Linkedin, href: "https://www.linkedin.com/in/vipas-academy", label: "LinkedIn" },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/vipas-academy",
+      label: "LinkedIn",
+    },
     { icon: Youtube, href: "#", label: "YouTube" },
   ];
 
+  // ✅ Handles both internal and anchor links
   const handleLinkClick = (href: string) => {
     if (href.startsWith("#")) {
       if (pathname === "/") {
         const el = document.querySelector(href);
         if (el) el.scrollIntoView({ behavior: "smooth" });
       } else {
-        router.push(`/${href}`);
+        router.push(`/${href}`); // scroll anchor when user is on another page
       }
     } else {
-      router.push(href);
+      router.push(href); // works correctly for /courses/... now
     }
   };
 
-  return  (
-    <footer className="bg-gray-900 text-gray-300">
+  return (
+    <footer className="bg-gray-900 text-gray-300 overflow-x-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <motion.div
           initial="hidden"
@@ -69,23 +74,25 @@ export default function Footer() {
         >
           {/* Company Info */}
           <motion.div variants={staggerItem} className="lg:col-span-2">
-            {/* ✅ Larger Logo Section */}
             <div className="flex items-center space-x-4 mb-8">
-              <div className="relative w-24 h-24 sm:w-28 sm:h-28 justify-center"> {/* increased size */}
+              <div className="relative w-24 h-24 sm:w-28 sm:h-28 justify-center">
                 <Image
-                  src="/vipas_logo_bg.png" 
+                  src="/vipas_logo_bg.png"
                   alt="Vipas Academy Logo"
                   fill
                   className="object-contain"
                   priority
                 />
               </div>
-              <span className="text-2xl sm:text-3xl font-bold text-white">Vipas Academy</span>
+              <span className="text-2xl sm:text-3xl font-bold text-white">
+                Vipas Academy
+              </span>
             </div>
 
             <p className="text-gray-400 mb-6 max-w-xl leading-relaxed text-left font-semibold">
-              Empowering learners worldwide with high-quality online education. 
-              Transform your career and achieve your goals with our expert-led courses.
+              Empowering learners worldwide with high-quality online education.
+              Transform your career and achieve your goals with our expert-led
+              courses.
             </p>
 
             <div className="space-y-4">
@@ -102,7 +109,9 @@ export default function Footer() {
                 <div className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Phone className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-sm sm:text-base font-semibold">+91 99666 52099</span>
+                <span className="text-sm sm:text-base font-semibold">
+                  +91 99666 52099
+                </span>
               </div>
 
               <div className="flex items-start gap-3">
@@ -110,8 +119,9 @@ export default function Footer() {
                   <MapPin className="w-5 h-5 text-white" />
                 </div>
                 <span className="text-sm sm:text-base text-left leading-relaxed font-semibold max-w-lg">
-                  Door No. 19-8-112/D, Second Floor, Kora Towers, Hathiramji Colony, near
-                  Annamiah Circle, Air Bypass Road, Tirupati, 517501
+                  Door No. 19-8-112/D, Second Floor, Kora Towers, Hathiramji
+                  Colony, near Annamiah Circle, Air Bypass Road, Tirupati,
+                  517501
                 </span>
               </div>
             </div>
@@ -140,12 +150,12 @@ export default function Footer() {
             <ul className="space-y-3">
               {courses.map((course) => (
                 <li key={course.name}>
-                  <a
-                    href={course.href}
-                    className="hover:text-blue-500 transition-colors duration-300 hover:translate-x-1 inline-block"
+                  <button
+                    onClick={() => handleLinkClick(course.href)}
+                    className="hover:text-blue-500 transition-colors duration-300 hover:translate-x-1 inline-block text-left"
                   >
                     {course.name}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>
@@ -172,6 +182,8 @@ export default function Footer() {
                     key={social.label}
                     href={social.href}
                     aria-label={social.label}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-900 transition-all duration-300 hover:scale-110"
                   >
                     <Icon className="w-5 h-5" />
