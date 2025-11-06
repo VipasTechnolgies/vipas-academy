@@ -1,6 +1,6 @@
 "use client";
 
-import { MessageCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function WhatsAppButton() {
   const whatsappNumber = "919966652099"; // Replace with your WhatsApp number (with country code)
@@ -11,10 +11,10 @@ export default function WhatsAppButton() {
       href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-5 right-5 bg-teal-500 hover:bg-teal-600 text-white rounded-full p-4 shadow-lg transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center"
+      className="fixed bottom-5 right-5 bg-green-600 hover:bg-green-600 text-white rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center"
       aria-label="Chat on WhatsApp"
     >
-      <MessageCircle className="w-7 h-7" />
+      <FaWhatsapp  className="w-9 h-8" />
     </a>
   );
 }

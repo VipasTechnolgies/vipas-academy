@@ -164,7 +164,7 @@ export default function ContactPage() {
               </div>
               <div className="mt-10">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.7374394066156!2d79.42629337509896!3d13.627740186776024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4b8eaaaaaaa%3A0x9c61629509d825b5!2sVipas%20Academy!5e0!3m2!1sen!2sin!4v1698765487564!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1394.519286888483!2d79.41897643313627!3d13.622348753552755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1762336626806!5m2!1sen!2sin"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}

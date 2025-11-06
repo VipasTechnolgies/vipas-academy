@@ -12,7 +12,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const navLinks = [
-    { name: "Home", href: "#home" },
+    { name: "Home", href: "/" },
     { name: "About", href: "#about" },
     { name: "Courses", href: "/courses" },
     { name: "Why Choose Us", href: "#study" },

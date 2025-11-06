@@ -171,7 +171,7 @@ export default function Footer() {
           className="border-t border-gray-800 pt-8"
         >
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-gray-400 text-sm text-center md:text-left">
+            <p className="text-white text-sm text-center md:text-left">
               © 2025 Vipas Academy. All rights reserved.
             </p>
             <div className="flex items-center gap-4">
