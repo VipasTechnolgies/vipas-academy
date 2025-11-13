@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import toast, { Toaster } from "react-hot-toast";
@@ -17,9 +17,29 @@ import {
 } from "../types/form";
 import { contactFormSchema } from "../schemas/contact";
 
-
 export default function ContactPage() {
   const [loading, setLoading] = useState(false);
+
+  // ⬇️⬇️ NEW: Auto-scroll to form when URL has #enroll-form
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const hash = window.location.hash;
+
+      if (hash === "#enroll-form") {
+        setTimeout(() => {
+          const section = document.getElementById("enroll-form");
+          if (section) {
+            const yOffset = -120; // puts scroll 120px above form
+            const y =
+              section.getBoundingClientRect().top + window.scrollY + yOffset;
+
+            window.scrollTo({ top: y, behavior: "smooth" });
+          }
+        }, 300);
+      }
+    }
+  }, []);
+  // ⬆️⬆️ END NEW CODE
 
   const {
     register,
@@ -34,10 +54,10 @@ export default function ContactPage() {
       name: "",
       contact: "",
       email: "",
-      education: "" ,
-      planOfFuture: "" ,
+      education: "",
+      planOfFuture: "",
       careerPath: "",
-      inquiryType: "" ,
+      inquiryType: "",
     },
   });
 
@@ -56,7 +76,7 @@ export default function ContactPage() {
 
       toast.success("Thank you! We’ll contact you soon.", {
         style: {
-          background: "#16a34a", // green-600
+          background: "#16a34a",
           color: "#fff",
           fontWeight: "600",
           padding: "12px 20px",
@@ -73,7 +93,7 @@ export default function ContactPage() {
     } catch (error) {
       toast.error("Something went wrong. Please try again.", {
         style: {
-          background: "#dc2626", // red-600
+          background: "#dc2626",
           color: "#fff",
           fontWeight: "600",
           padding: "12px 20px",
@@ -108,7 +128,7 @@ export default function ContactPage() {
           Contact Us
         </h1>
       </section>
-  
+
       {/* Contact Details + Form */}
       <section className="py-20 bg-white">
         <div className="text-center mb-16">
@@ -119,9 +139,9 @@ export default function ContactPage() {
             Ready to transform your career? Fill out the form below.
           </p>
         </div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            
             {/* Left Side - Info */}
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-8">
@@ -162,6 +182,7 @@ export default function ContactPage() {
                   </div>
                 </div>
               </div>
+
               <div className="mt-10">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1394.519286888483!2d79.41897643313627!3d13.622348753552755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1762336626806!5m2!1sen!2sin"
@@ -178,6 +199,7 @@ export default function ContactPage() {
 
             {/* Right Side - Form */}
             <form
+              id="enroll-form"
               onSubmit={handleSubmit(onSubmit)}
               className="bg-gray-50 p-8 rounded-xl shadow-md"
             >
@@ -355,6 +377,7 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
       <footer className="bg-gray-900 text-gray-300 mt-16">
         <div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
