@@ -49,7 +49,7 @@ export default function SAPPSDetails() {
     reviews_count: 320,
     category: "SAP PS",
     image_url:
-      "https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/PS.png",
     instructor_name: "John Smith",
     instructor_title: "SAP Certified PS Consultant",
     instructor_image:

@@ -49,7 +49,7 @@ export default function SAPONBDetails() {
     reviews_count: 150,
     category: "SAP SuccessFactors",
     image_url:
-      "https://images.pexels.com/photos/3184300/pexels-photo-3184300.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/ONB.png",
     instructor_name: "Michael Lee",
     instructor_title: "SAP Certified SuccessFactors Consultant",
     instructor_image:

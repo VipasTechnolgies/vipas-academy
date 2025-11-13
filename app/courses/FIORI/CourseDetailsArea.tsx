@@ -51,7 +51,7 @@ export default function SAPFioriDetails() {
     reviews_count: 280,
     category: "SAP UI/UX",
     image_url:
-      "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/FIORI.png",
     instructor_name: "Jane Doe",
     instructor_title: "SAP Certified Fiori Consultant",
     instructor_image:

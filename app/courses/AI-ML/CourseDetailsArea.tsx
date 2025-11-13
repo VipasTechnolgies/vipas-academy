@@ -90,7 +90,7 @@ const [showModal, setShowModal] = useState(false);
     category: "AI / ML",
     language: "English",
     image_url:
-      "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/AIML.jpg",
     instructor_name: "Dr. Alex Carter",
     instructor_title: "AI Researcher & Data Scientist",
     instructor_image:

@@ -51,7 +51,7 @@ export default function SACSAPPlanningDetails() {
     reviews_count: 180,
     category: "SAP Analytics Cloud",
     image_url:
-      "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/SAC.jpg",
     instructor_name: "Alexander Moore",
     instructor_title: "SAP Certified SAC Consultant",
     instructor_image:

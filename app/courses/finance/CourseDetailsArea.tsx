@@ -87,7 +87,7 @@ export default function SAPFICODetailsArea() {
     internship: "3 Months",
     language: "English",
     image_url:
-      "https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/FICO.png",
     instructor_name: "John Smith",
     instructor_title: "Senior SAP FICO Consultant",
     instructor_image:

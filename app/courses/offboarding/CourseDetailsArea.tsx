@@ -51,7 +51,7 @@ export default function SAPOFBDetails() {
     reviews_count: 120,
     category: "SAP SuccessFactors",
     image_url:
-      "https://images.pexels.com/photos/3184293/pexels-photo-3184293.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/OFB.png",
     instructor_name: "Alice Johnson",
     instructor_title: "SAP Certified SuccessFactors Consultant",
     instructor_image:

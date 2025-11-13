@@ -50,7 +50,7 @@ export default function DataAnalyticsCourseDetails() {
     reviews_count: 200,
     category: "Data Analytics",
     image_url:
-      "https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/data-analytics.jpg",
     instructor_name: "Emily Johnson",
     instructor_title: "Data Analytics Expert",
     instructor_image:

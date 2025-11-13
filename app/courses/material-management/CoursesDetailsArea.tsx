@@ -90,7 +90,7 @@ export default function SAPMMDetailsArea() {
     category: "SAP",
     language: "English",
     image_url:
-      "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/MM.png",
     image_enroll: "/Enroll-Now.png",
     instructor_name: "Jane Doe",
     instructor_title: "SAP MM Consultant",

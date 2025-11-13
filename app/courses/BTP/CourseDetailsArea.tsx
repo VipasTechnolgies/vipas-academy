@@ -61,7 +61,7 @@ export default function SAPBTPDetails() {
     reviews_count: 320,
     category: "SAP Cloud",
     image_url:
-      "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/BTP.jpg",
     instructor_name: "John Mathew",
     instructor_title: "SAP Certified BTP Architect",
     instructor_image:

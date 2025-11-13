@@ -87,7 +87,7 @@ const [showModal, setShowModal] = useState(false);
     category: "SAP",
     language: "English",
     image_url:
-      "https://images.pexels.com/photos/1181346/pexels-photo-1181346.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/ABAP.png",
     instructor_name: "Emma Johnson",
     instructor_title: "Senior SAP ABAP Consultant",
     instructor_image:
