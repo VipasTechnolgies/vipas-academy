@@ -65,7 +65,7 @@ export default function SAPRMKDetails() {
     reviews_count: 130,
     category: "SAP SuccessFactors",
     image_url:
-      "https://images.pexels.com/photos/3184329/pexels-photo-3184329.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/RMK.png",
     instructor_name: "David Smith",
     instructor_title: "SAP Certified SuccessFactors Consultant",
     instructor_image:

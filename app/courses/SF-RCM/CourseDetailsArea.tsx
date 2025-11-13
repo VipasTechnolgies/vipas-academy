@@ -52,7 +52,7 @@ export default function SAPRCMDetails() {
     reviews_count: 210,
     category: "SAP SuccessFactors",
     image_url:
-      "https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/RCM.png",
     instructor_name: "Sarah Johnson",
     instructor_title: "SAP Certified SuccessFactors Consultant",
     instructor_image:

@@ -50,7 +50,7 @@ export default function SAPPMGMDetails() {
     reviews_count: 140,
     category: "SAP SuccessFactors",
     image_url:
-      "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/PMGM.png",
     instructor_name: "Sophia Johnson",
     instructor_title: "SAP Certified SuccessFactors Consultant",
     instructor_image:

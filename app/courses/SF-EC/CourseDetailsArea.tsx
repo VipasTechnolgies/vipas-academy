@@ -50,7 +50,7 @@ const [showModal, setShowModal] = useState(false);
     reviews_count: 140,
     category: "SAP SuccessFactors",
     image_url:
-      "https://images.pexels.com/photos/3184330/pexels-photo-3184330.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/EC.png",
     instructor_name: "Emily Roberts",
     instructor_title: "SAP Certified SuccessFactors Consultant",
     instructor_image:
