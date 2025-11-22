@@ -443,28 +443,6 @@ export default function SAPSDDetailsArea() {
                 {course.description}
               </p>
 
-              {/* Stats */}
-              <div className="flex flex-wrap items-center gap-6 mb-6">
-                <div className="flex items-center gap-2">
-                  <div className="flex items-center">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className={`w-5 h-5 ${
-                          i < Math.floor(course.rating)
-                            ? "fill-yellow-400 text-yellow-400"
-                            : "text-gray-300"
-                        }`}
-                      />
-                    ))}
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 text-gray-900">
-                  <Users className="w-5 h-5" />
-                  <span>{course.students_count.toLocaleString()} students</span>
-                </div>
-              </div>
-
               {/* Instructor */}
               <div className="flex items-center gap-4 mb-8"></div>
 
@@ -650,7 +628,7 @@ export default function SAPSDDetailsArea() {
                     </div>
                     <div className="flex items-center gap-3 text-gray-700">
                       <BookOpen className="w-5 h-5 text-gray-900" />
-                      <span>{course.Modules_count}Lessons</span>
+                      <span>{course.Modules_count} Lessons</span>
                     </div>
                   </div>
                 </div>
