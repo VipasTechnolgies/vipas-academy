@@ -40,10 +40,10 @@ export default function DataAnalyticsCourseDetails() {
       "Learn advanced Excel and Power BI techniques to analyze, visualize, and interpret data effectively. Focus on dashboards, PivotTables, Power Query, and interactive reporting. ",
     course_overview:
       "Master Excel and Power BI for business analytics. Gain hands-on experience with data cleaning, visualization, and reporting to make data-driven decisions. ",
-    course_duration: "3 Months Course",
-    internship: "3 Months internship",
+    course_duration: "2 Months Course",
+    internship: "1 Month Internship",
     course_enroll: "/Enroll-Now.png",
-    level: "Beginner to Advanced",
+ level: "Beginner to Advanced Level",
     Modules_count: 18,
     students_count: 1500,
     rating: 4.8,
@@ -298,26 +298,6 @@ export default function DataAnalyticsCourseDetails() {
                 {course.description}
               </p>
 
-              <div className="flex flex-wrap items-center gap-6 mb-6">
-                <div className="flex items-center gap-2">
-                  <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className={`w-5 h-5 ${
-                          i < Math.floor(course.rating)
-                            ? "fill-yellow-400 text-yellow-400"
-                            : "text-gray-300"
-                        }`}
-                      />
-                    ))}
-                  </div>
-                  <span className="font-semibold text-gray-900">
-                    {course.rating}
-                  </span>
-                </div>
-              </div>
-
               <div className="mb-8 rounded-2xl overflow-hidden">
                 <img
                   src={course.image_url}
@@ -461,7 +441,7 @@ export default function DataAnalyticsCourseDetails() {
                     </div>
                     <div className="flex items-center gap-3 text-gray-900">
                       <BookOpen className="w-5 h-5 text-gray-900" />
-                      <span>{course.Modules_count} Modules</span>
+                      <span>{course.Modules_count} Lessons</span>
                     </div>
                   </div>
                 </div>

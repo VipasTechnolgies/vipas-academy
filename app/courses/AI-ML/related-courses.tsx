@@ -12,7 +12,7 @@ const courses = [
     instructor: 'John Smith',
     image: '/FIORI.png',
     students: 12450,
-    course_duration: '6 months',
+    course_duration: '3 months',
     level: 'Beginner',
     url: '/courses/FIORI', // static course page
   },
@@ -22,7 +22,7 @@ const courses = [
     instructor: 'Lisa Johnson',
     image: '/fullstack-development.jpg',
     students: 9800,
-    course_duration: '6 months',
+    course_duration: '3 months',
     level: 'Intermediate',
     url: '/courses/fullstack-development',
   },

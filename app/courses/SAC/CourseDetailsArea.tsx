@@ -41,10 +41,10 @@ export default function SACSAPPlanningDetails() {
 
     course_overview:
       "Master SAC to create interactive dashboards, perform advanced analytics, and integrate data from multiple sources. Apply real-time projects to simulate decision-making scenarios.",
-    course_duration: "3 Months course",
-    internship: "3 Months",
+    course_duration: "2 Months Course",
+    internship: "1 month Internship",
     course_enroll: "/Enroll-Now.png",
-    level: "Intermediate",
+    level: "Beginner to Advanced Level",
     Modules_count: 13,
     students_count: 1200,
     rating: 4.9,
@@ -245,25 +245,6 @@ export default function SACSAPPlanningDetails() {
                 {course.description}
               </p>
 
-              <div className="flex flex-wrap items-center gap-6 mb-6">
-                <div className="flex items-center gap-2">
-                  <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className={`w-5 h-5 ${
-                          i < Math.floor(course.rating)
-                            ? "fill-yellow-400 text-yellow-400"
-                            : "text-gray-300"
-                        }`}
-                      />
-                    ))}
-                  </div>
-                  <span className="font-semibold text-gray-900">
-                    {course.rating}
-                  </span>
-                </div>
-              </div>
 
               <div className="mb-8 rounded-2xl overflow-hidden">
                 <img
@@ -408,7 +389,7 @@ export default function SACSAPPlanningDetails() {
                     </div>
                     <div className="flex items-center gap-3 text-gray-900">
                       <BookOpen className="w-5 h-5 text-gray-900" />
-                      <span>{course.Modules_count} Modules</span>
+                      <span>{course.Modules_count} Lessons</span>
                     </div>
                   </div>
                 </div>

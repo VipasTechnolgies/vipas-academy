@@ -40,8 +40,8 @@ export default function SAPONBDetails() {
       "Master SAP SuccessFactors Onboarding to configure onboarding templates, task workflows, and automated processes. Apply hands-on projects simulating real-world onboarding for employees.",
     course_overview:
       "Master SAP SuccessFactors Onboarding to configure onboarding templates, task workflows, and automated processes. Apply hands-on projects simulating real-world onboarding for employees.",
-    course_duration: "3 Months Course",
-    internship: "3 Months",
+    course_duration: "2 Months Course",
+    internship: "1 Month Internship",
     level: "Intermediate",
     Modules_count: 10,
     students_count: 1000,
@@ -187,25 +187,6 @@ export default function SAPONBDetails() {
                 {course.description}
               </p>
 
-              <div className="flex flex-wrap items-center gap-6 mb-6">
-                <div className="flex items-center gap-2">
-                  <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className={`w-5 h-5 ${
-                          i < Math.floor(course.rating)
-                            ? "fill-yellow-400 text-yellow-400"
-                            : "text-gray-300"
-                        }`}
-                      />
-                    ))}
-                  </div>
-                  <span className="font-semibold text-gray-900">
-                    {course.rating}
-                  </span>
-                </div>
-              </div>
 
               <div className="mb-8 rounded-2xl overflow-hidden">
                 <img
@@ -350,7 +331,7 @@ export default function SAPONBDetails() {
                     </div>
                     <div className="flex items-center gap-3 text-gray-900">
                       <BookOpen className="w-5 h-5 text-gray-900" />
-                      <span>{course.Modules_count} Modules</span>
+                      <span>{course.Modules_count} Lessons</span>
                     </div>
                   </div>
                 </div>
@@ -404,15 +385,6 @@ export default function SAPONBDetails() {
                 </div>
               </div>
 
-              <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">
-                  Share this course:
-                </h3>
-                <button className="w-full border-2 border-gray-300 hover:border-teal-600 text-gray-700 hover:text-teal-600 font-semibold py-3 rounded-lg flex items-center justify-center gap-2 transition-colors">
-                  <Share2 className="w-5 h-5" />
-                  Share Course
-                </button>
-              </div>
             </div>
           </div>
         </div>

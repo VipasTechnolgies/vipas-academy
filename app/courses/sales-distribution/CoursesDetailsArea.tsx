@@ -76,10 +76,10 @@ export default function SAPSDDetailsArea() {
     description:
       "Gain mastery in SAP SD to streamline sales, manage orders, and optimize distribution processes for real-world business success.",
     price: 199,
-    course_duration: "3 months",
-    internship: "3 months",
-    level: "Beginner to Advanced",
-    Modules_count: 120,
+    course_duration: "2 months course",
+    internship: "1 month",
+ level: "Beginner to Advanced Level",
+    Modules_count: 11,
     students_count: 1534,
     rating: 4.8,
     reviews_count: 256,
@@ -596,7 +596,7 @@ export default function SAPSDDetailsArea() {
                                 className="px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors"
                               >
                                 <div className="flex items-center gap-4">
-                                  <Play className="w-4 h-4 text-gray-400" />
+                                  <Play className="w-4 h-4 text-gray-900" />
                                   <span className="text-gray-700">
                                     {lesson.lesson_title}
                                   </span>
@@ -636,21 +636,21 @@ export default function SAPSDDetailsArea() {
 
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center gap-3 text-gray-700">
-                      <Clock className="w-5 h-5 text-gray-400" />
+                      <Clock className="w-5 h-5 text-black" />
                       <span>{course.course_duration}</span>
                     </div>
 
                     <div className="flex items-center gap-3 text-gray-700">
-                      <LucideAward className="w-5 h-5 text-gray-400" />
+                      <LucideAward className="w-5 h-5 text-gray-900" />
                       <span>{course.internship} Internship</span>
                     </div>
                     <div className="flex items-center gap-3 text-gray-700">
-                      <BarChart3 className="w-5 h-5 text-gray-400" />
+                      <BarChart3 className="w-5 h-5 text-gray-900" />
                       <span>{course.level}</span>
                     </div>
                     <div className="flex items-center gap-3 text-gray-700">
-                      <BookOpen className="w-5 h-5 text-gray-400" />
-                      <span>{course.Modules_count} Modules</span>
+                      <BookOpen className="w-5 h-5 text-gray-900" />
+                      <span>{course.Modules_count}Lessons</span>
                     </div>
                   </div>
                 </div>

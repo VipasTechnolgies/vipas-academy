@@ -42,10 +42,10 @@ export default function SAPRCMDetails() {
       "Manage the full recruiting lifecycle efficiently. SAP SuccessFactors RCM helps you handle job requisitions, candidate management, workflows, and analytics for smarter hiring.",
     course_overview:
       "Master RCM to configure workflows, manage candidates, and integrate with Onboarding, EC, and LMS modules. Apply hands-on exercises simulating real recruitment processes. ",
-    course_duration: "3 Months Course",
-    internship: "3 Months",
+    course_duration: "2 Months Course",
+    internship: "1 month",
     course_enroll: "/Enroll-Now.png",
-    level: "Beginner to Advanced",
+ level: "Beginner to Advanced Level",
     Modules_count: 12,
     students_count: 1200,
     rating: 4.7,
@@ -379,7 +379,7 @@ export default function SAPRCMDetails() {
                     </div>
                     <div className="flex items-center gap-3 text-gray-700">
                       <BookOpen className="w-5 h-5 text-gray-400" />
-                      <span>{course.Modules_count} Modules</span>
+                      <span>{course.Modules_count} Lessons</span>
                     </div>
                   </div>
                 </div>

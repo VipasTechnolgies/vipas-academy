@@ -76,15 +76,15 @@ export default function SAPFICODetailsArea() {
       "Take charge of your organization’s financial data with SAP FICO. Learn ledger management, asset accounting, cost centers, and reporting to make informed financial decisions. ",
     course_overview:
       "Master SAP FICO to perform financial accounting, controlling, and reporting tasks. Learn to manage ledgers, cost centers, and assets while linking FI and CO processes across business functions.",
-    course_duration: "3 Months",
-    level: "Beginner to Advanced",
+    course_duration: "2 months course",
+ level: "Beginner to Advanced Level",
     Modules_count: 19,
     students_count: 1890,
     rating: 4.8,
     reviews_count: 254,
     image_enroll: "/Enroll-Now.png",
     category: "SAP",
-    internship: "3 Months",
+    internship: "1 month",
     language: "English",
     image_url:
       "/FICO.png",
@@ -636,7 +636,7 @@ export default function SAPFICODetailsArea() {
                     </div>
                     <div className="flex items-center gap-3 text-gray-700">
                       <BookOpen className="w-5 h-5 text-gray-400" />
-                      <span>{course.Modules_count} Modules</span>
+                      <span>{course.Modules_count} Lessons</span>
                     </div>
                   </div>
                 </div>

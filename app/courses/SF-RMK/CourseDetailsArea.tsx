@@ -56,8 +56,8 @@ export default function SAPRMKDetails() {
     course_overview:
       "Master SAP RMK to build effective career portals, manage candidate interactions, and optimize recruitment marketing campaigns. Apply practical exercises to simulate real-world recruitment scenarios. ",
     price: 159.99,
-    course_duration: "3 Months Course",
-    internship: "3 Months",
+    course_duration: "2 Months Course",
+    internship: "1 month",
     level: "Intermediate",
     Modules_count: 11,
     students_count: 900,
@@ -362,7 +362,7 @@ export default function SAPRMKDetails() {
                     </div>
                     <div className="flex items-center gap-3 text-gray-700">
                       <BookOpen className="w-5 h-5 text-gray-400" />
-                      <span>{course.Modules_count} Modules</span>
+                      <span>{course.Modules_count} Lessons</span>
                     </div>
                   </div>
                 </div>

@@ -5,17 +5,13 @@ import {
   Clock,
   BarChart3,
   BookOpen,
-  Star,
-  ShoppingCart,
-  CreditCard,
-  Share2,
   Check,
   Play,
   ChevronDown,
-  Users,
   PhoneCall,
   Download,
   CheckCircle,
+  LucideAward,
 } from "lucide-react";
 import Breadcrumb from "@/app/components/breadcrumb";
 import DownloadSyllabusModal from "@/app/components/DownloadSyllabusModal";
@@ -56,9 +52,6 @@ interface Course {
   language: string;
   image_url: string;
   image_enroll: string;
-  instructor_name: string;
-  instructor_title: string;
-  instructor_image: string;
   internship: string;
   Modules_count: number;
 }
@@ -80,22 +73,17 @@ export default function SAPMMDetailsArea() {
     course_overview:
       "Master the end-to-end material management lifecycle. Apply practical exercises to manage procurement, inventory, vendor data, and stock transfers in realistic business contexts. ",
     price: 199,
-    course_duration: "3 Months",
-    level: "Beginner to Advanced",
-    internship: "3 Months",
+    course_duration: "2 months course",
+ level: "Beginner to Advanced Level",
+    internship: "1 month",
     Modules_count: 18,
     students_count: 1245,
     rating: 4.7,
     reviews_count: 198,
     category: "SAP",
     language: "English",
-    image_url:
-      "/MM.png",
+    image_url: "/MM.png",
     image_enroll: "/Enroll-Now.png",
-    instructor_name: "Jane Doe",
-    instructor_title: "SAP MM Consultant",
-    instructor_image:
-      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100",
   };
 
   const inclusions: Inclusion[] = [
@@ -605,23 +593,6 @@ export default function SAPMMDetailsArea() {
                 <div className="flex items-center gap-2 text-gray-600"></div>
               </div>
 
-              {/* Instructor */}
-              <div className="flex items-center gap-4 mb-8">
-                <img
-                  src={course.instructor_image}
-                  alt={course.instructor_name}
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-                <div>
-                  <p className="text-gray-900 font-semibold">
-                    {course.instructor_name}
-                  </p>
-                  <p className="text-gray-500 text-sm">
-                    {course.instructor_title}
-                  </p>
-                </div>
-              </div>
-
               {/* Course Image */}
               <div className="mb-8 rounded-2xl overflow-hidden">
                 <img
@@ -788,13 +759,17 @@ export default function SAPMMDetailsArea() {
                       <Clock className="w-5 h-5 text-gray-900" />
                       <span>{course.course_duration}</span>
                     </div>
+                    <div className="flex items-center gap-3 text-gray-700">
+                      <LucideAward className="w-5 h-5 text-gray-900" />
+                      <span>{course.internship} Internship</span>
+                    </div>
                     <div className="flex items-center gap-3 text-gray-900">
                       <BarChart3 className="w-5 h-5 text-gray-900" />
                       <span>{course.level}</span>
                     </div>
                     <div className="flex items-center gap-3 text-gray-900">
                       <BookOpen className="w-5 h-5 text-gray-900" />
-                      <span>{course.Modules_count} Modules</span>
+                      <span>{course.Modules_count} Lessons</span>
                     </div>
                   </div>
                 </div>

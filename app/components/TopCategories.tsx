@@ -66,11 +66,7 @@ export default function TopCategories() {
                   {category.name}
                 </h3>
                 <p className="text-gray-600">{category.courses} Courses Available</p>
-                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                    <span className="text-blue-900 text-sm font-bold">→</span>
-                  </div>
-                </div>
+              
               </motion.div>
             );
           })}

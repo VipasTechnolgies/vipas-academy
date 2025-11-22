@@ -52,16 +52,16 @@ export default function SAPBTPDetails() {
     title: "SAP BTP (Business Technology Platform)",
     description:
       "Learn to build, deploy, and integrate intelligent enterprise applications on SAP’s cloud platform. SAP BTP combines analytics, integration, and development for real-world business solutions. ",
-    course_duration: "3 Months Course",
-    internship: "3 Months internship",
-    level: "Beginner to Advanced",
+    course_duration: "2 Months Course",
+    internship: "1 Month",
+ level: "Beginner to Advanced Level",
     Modules_count: 11,
     students_count: 2480,
     rating: 4.9,
     reviews_count: 320,
     category: "SAP Cloud",
     image_url:
-      "/BTP.jpg",
+      "/BTP.png",
     instructor_name: "John Mathew",
     instructor_title: "SAP Certified BTP Architect",
     instructor_image:
@@ -225,45 +225,7 @@ export default function SAPBTPDetails() {
                 {course.description}
               </p>
 
-              {/* Stats */}
-              <div className="flex flex-wrap items-center gap-6 mb-6">
-                <div className="flex items-center gap-2">
-                  <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className={`w-5 h-5 ${
-                          i < Math.floor(course.rating)
-                            ? "fill-yellow-400 text-yellow-400"
-                            : "text-gray-300"
-                        }`}
-                      />
-                    ))}
-                  </div>
-                </div>
-                {/* <div className="flex items-center gap-2 text-gray-600">
-                  <Users className="w-5 h-5" />
-                  <span>{course.students_count.toLocaleString()} students</span>
-                </div> */}
-              </div>
-
-              {/* Instructor */}
-              <div className="flex items-center gap-4 mb-8">
-                {/* <img
-                  src={course.instructor_image}
-                  alt={course.instructor_name}
-                  className="w-12 h-12 rounded-full object-cover"
-                /> */}
-                <div>
-                  <p className="font-semibold text-gray-900">
-                    {/* {course.instructor_name} */}
-                  </p>
-                  <p className="text-gray-500 text-sm">
-                    {/* {course.instructor_title} */}
-                  </p>
-                </div>
-              </div>
-
+           
               {/* Course Image */}
               <div className="mb-8 rounded-2xl overflow-hidden">
                 <Image
@@ -421,7 +383,7 @@ export default function SAPBTPDetails() {
                     </div>
                     <div className="flex items-center gap-3 text-gray-700">
                       <BookOpen className="w-5 h-5 text-gray-400" />
-                      <span>{course.Modules_count} Modules</span>
+                      <span>{course.Modules_count} Lessons</span>
                     </div>
                   </div>
                 </div>

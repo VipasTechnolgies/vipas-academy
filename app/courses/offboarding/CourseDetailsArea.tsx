@@ -40,10 +40,10 @@ export default function SAPOFBDetails() {
     description:
       "Learn to streamline the employee onboarding experience using SAP SuccessFactors OMB/OFB. Focus on automating workflows, engaging new hires, and ensuring compliance. ",
     price: 149.99,
-    course_duration: "3 Months Course",
+    course_duration: "2 Months Course",
     Course_overview:
       "Master SAP SuccessFactors Onboarding to configure onboarding templates, task workflows, and automated processes. Apply hands-on projects simulating real-world onboarding for employees. ",
-    internship: "3 Months",
+    internship: "1 month",
     level: "Intermediate",
     Modules_count: 9,
     students_count: 900,
@@ -324,7 +324,7 @@ export default function SAPOFBDetails() {
                     </div>
                     <div className="flex items-center gap-3 text-gray-900">
                       <BookOpen className="w-5 h-5 text-gray-900" />
-                      <span>{course.Modules_count} Modules</span>
+                      <span>{course.Modules_count} Lessons</span>
                     </div>
                   </div>
                 </div>

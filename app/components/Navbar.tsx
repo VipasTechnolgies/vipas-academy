@@ -14,10 +14,22 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "#about" },
-    { name: "Courses", href: "/courses" },
     { name: "Why Choose Us", href: "#study" },
+    { name: "Courses", href: "/courses" },
     { name: "Testimonials", href: "#testimonials" },
   ];
+
+  const isActive = (href: string) => {
+    if (href.startsWith("#")) {
+      // Section links only active on homepage
+      if (pathname === "/") {
+        return typeof window !== "undefined" && window.location.hash === href;
+      }
+      return false;
+    }
+
+    return pathname === href;
+  };
 
   const handleLinkClick = (href: string) => {
     setIsOpen(false);
@@ -39,15 +51,15 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 font-sora text-md bg-white/95 backdrop-blur-sm shadow-sm overflow-x-hidden">
-      <div className="container mx-auto px-8 sm:px-12 lg:px-20">
+    <nav className="fixed top-0 left-0 right-0 z-50 font-sora text-md bg-white/95 backdrop-blur-sm shadow-sm px-3">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-10">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <div
-            className="flex items-center space-x-3 cursor-pointer"
+            className="flex items-center space-x-6 cursor-pointer"
             onClick={() => handleLinkClick("/")}
           >
-            <div className="relative w-20 h-20">
+            <div className="relative w-24 h-24">
               <Image
                 src="/vipas-logo.png"
                 alt="Vipas Academy Logo"
@@ -59,16 +71,22 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
+
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <button
                 key={link.name}
                 onClick={() => handleLinkClick(link.href)}
-                className="text-gray-700 hover:text-blue-900 transition-colors duration-300 font-medium"
+                className={`transition-colors duration-300 font-medium ${
+                  isActive(link.href)
+                    ? "text-blue-900 font-semibold"
+                    : "text-gray-700 hover:text-blue-900"
+                }`}
               >
                 {link.name}
               </button>
             ))}
+
             <button
               onClick={() => handleLinkClick("/contact")}
               className="bg-gradient-to-r from-blue-900 to-blue-900 text-white px-6 py-2.5 rounded-full font-medium hover:shadow-lg transition-all duration-300 hover:scale-105"
@@ -98,11 +116,16 @@ export default function Navbar() {
               <button
                 key={link.name}
                 onClick={() => handleLinkClick(link.href)}
-                className="block w-full text-left py-3 text-gray-700 hover:text-blue-900 transition-colors duration-300"
+                className={`block w-full text-left py-3 transition-colors duration-300 ${
+                  isActive(link.href)
+                    ? "text-blue-900 font-semibold"
+                    : "text-gray-700 hover:text-blue-900"
+                }`}
               >
                 {link.name}
               </button>
             ))}
+
             <button
               onClick={() => handleLinkClick("/contact")}
               className="w-full mt-3 bg-gradient-to-r from-blue-900 to-blue-900 text-white px-6 py-2.5 rounded-full font-medium"

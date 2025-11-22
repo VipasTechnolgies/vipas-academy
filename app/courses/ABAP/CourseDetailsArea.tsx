@@ -12,6 +12,8 @@ import {
   Play,
   CheckCircle,
   Award,
+  Mail,
+  MapPin,
 } from "lucide-react";
 import Breadcrumb from "@/app/components/breadcrumb";
 import DownloadSyllabusModal from "@/app/components/DownloadSyllabusModal";
@@ -57,7 +59,7 @@ interface Course {
 
 export default function SAPABAPDetailsArea() {
   const router = useRouter();
-const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const [activeTab, setActiveTab] = useState("overview");
   const [expandedSections, setExpandedSections] = useState<Set<string>>(
     new Set()
@@ -77,8 +79,8 @@ const [showModal, setShowModal] = useState(false);
       "Learn to code and optimize applications on the SAP HANA platform. SAP ABAP on HANA helps you build efficient, scalable, and intelligent business applications. ",
     course_overview:
       "Master ABAP on HANA with hands-on coding exercises. Learn CDS views, AMDP, and advanced ABAP techniques to create optimized applications for real business scenarios.",
-    course_duration: "3 Months Course",
-    level: "Beginner to Advanced",
+    course_duration: "2 Months Course",
+    level: "Beginner to Advanced Level",
     Modules_count: 11,
     students_count: 1720,
     rating: 4.9,
@@ -86,8 +88,7 @@ const [showModal, setShowModal] = useState(false);
     internship: "3 Months ",
     category: "SAP",
     language: "English",
-    image_url:
-      "/ABAP.png",
+    image_url: "/ABAP.png",
     instructor_name: "Emma Johnson",
     instructor_title: "Senior SAP ABAP Consultant",
     instructor_image:
@@ -547,7 +548,7 @@ const [showModal, setShowModal] = useState(false);
                     </div>
                     <div className="flex items-center gap-3 text-gray-700">
                       <BookOpen className="w-5 h-5 text-gray-400" />
-                      <span>{course.Modules_count} Modules</span>
+                      <span>{course.Modules_count} Lessons</span>
                     </div>
                   </div>
                 </div>
@@ -575,6 +576,46 @@ const [showModal, setShowModal] = useState(false);
                       displayName="SAP ABAP on HANA Course.pdf"
                     />
                   )}
+                </div>
+              </div>
+              <div className="bg-gray-50 border border-gray-400 rounded-2xl p-6 shadow-sm">
+                <h3 className="text-lg font-bold text-gray-900 mb-6">
+                  Contact Us
+                </h3>
+
+                <div className="space-y-5">
+                  {/* Phone */}
+                  <div className="flex items-start gap-4">
+                    <PhoneCall className="w-6 h-6 text-blue-900 mt-1" />
+                    <div>
+                      <p className="text-gray-500 text-sm">For Support</p>
+                      <p className="text-gray-900 font-semibold text-base">
+                        +91 99666 52099
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Email */}
+                  <div className="flex items-start gap-4">
+                    <Mail className="w-6 h-6 text-blue-900 mt-1" />
+                    <div>
+                      <p className="text-gray-500 text-sm">Send Message</p>
+                      <p className="text-gray-900 font-semibold text-base break-all">
+                        vipasacademy1@gmail.com
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Location */}
+                  <div className="flex items-start gap-4">
+                    <MapPin className="w-6 h-6 text-blue-900 mt-1" />
+                    <div>
+                      <p className="text-gray-500 text-sm">Our Location</p>
+                      <p className="text-gray-900 font-semibold text-base">
+                        Andhra Pradesh , India, 517501
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

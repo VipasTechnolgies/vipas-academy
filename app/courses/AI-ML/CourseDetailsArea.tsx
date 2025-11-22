@@ -55,9 +55,6 @@ interface Course {
   category: string;
   language: string;
   image_url: string;
-  instructor_name: string;
-  instructor_title: string;
-  instructor_image: string;
   course_overview: string;
   course_enroll: string;
   internship: string;
@@ -79,22 +76,19 @@ const [showModal, setShowModal] = useState(false);
     course_overview:
       "Master AI & ML with hands-on projects, from data preprocessing to building predictive models. Apply algorithms and analytics to solve practical problems across industries. ",
     price: 299,
-    course_duration: "3 Months Course",
-    level: "Beginner to Advanced",
+    course_duration: "2 Months Course",
+ level: "Beginner to Advanced Level",
     Modules_count: 10,
     students_count: 1890,
     course_enroll: "/Enroll-Now.png",
     rating: 4.9,
     reviews_count: 340,
-    internship: "3 Months Internship",
+    internship: "1 Month Internship",
     category: "AI / ML",
     language: "English",
     image_url:
       "/AIML.jpg",
-    instructor_name: "Dr. Alex Carter",
-    instructor_title: "AI Researcher & Data Scientist",
-    instructor_image:
-      "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100",
+   
   };
 
   const inclusions: Inclusion[] = [
@@ -476,24 +470,6 @@ const [showModal, setShowModal] = useState(false);
                 </div>
               </div>
 
-              {/* Instructor */}
-              <div className="flex items-center gap-4 mb-8">
-                <Image
-                  src={course.instructor_image}
-                  alt={course.instructor_name}
-                  width={1000}
-                  height={400}
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-                <div>
-                  <p className="text-gray-900 font-semibold">
-                    {course.instructor_name}
-                  </p>
-                  <p className="text-gray-500 text-sm">
-                    {course.instructor_title}
-                  </p>
-                </div>
-              </div>
 
               {/* Course Image */}
               <div className="mb-8 rounded-2xl overflow-hidden">
@@ -673,7 +649,7 @@ const [showModal, setShowModal] = useState(false);
                     </div>
                     <div className="flex items-center gap-3 text-gray-900">
                       <BookOpen className="w-5 h-5 text-gray-900" />
-                      <span>{course.Modules_count} Modules</span>
+                      <span>{course.Modules_count} Lessons</span>
                     </div>
                   </div>
                 </div>
@@ -704,7 +680,7 @@ const [showModal, setShowModal] = useState(false);
                 </div>
               </div>
 
-              {/* Share Course */}
+         
               {/* Contact Us Box */}
               <div className="bg-gray-50 border border-gray-400 rounded-2xl p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-gray-900 mb-6">

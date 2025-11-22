@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import { Clock, Users } from 'lucide-react';
-import Link from 'next/link';
-import { Course } from '../lib/supabase';
-import Image from 'next/image';
+import { Clock, Users } from "lucide-react";
+import Link from "next/link";
+import { Course } from "../lib/supabase";
+import Image from "next/image";
 export default function CourseCard({ course }: { course: Course }) {
-    const defaultImage =
+  const defaultImage =
     "https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=800";
 
   return (
     <div className="bg-white rounded-md overflow-hidden shadow-md border border-gray-100">
       {/* Course Image */}
-            <div className="relative w-full h-64">
+      <div className="relative w-full h-64">
         <Image
           src={course.image || defaultImage}
           alt={course.title}
@@ -42,18 +42,16 @@ export default function CourseCard({ course }: { course: Course }) {
             <Clock className="w-4 h-4" />
             <span>{course.course_duration}</span>
           </div>
-          <div className="flex items-center gap-2">
-            
-          </div>
+          <div className="flex items-center gap-2"></div>
         </div>
 
         {/* Enroll Button */}
         <Link
-                    href={course.url}
-                    className="inline-block w-full text-center bg-gradient-to-r from-blue-900 to-indigo-900 text-white font-medium py-2.5 rounded-full hover:scale-[1.02] transition-all"
-                  >
-                    Enroll Now
-                  </Link>
+          href={course.url}
+          className="inline-block w-full text-center bg-gradient-to-r from-blue-900 to-indigo-900 text-white font-medium py-2.5 rounded-full hover:scale-[1.02] transition-all"
+        >
+          Enroll Now
+        </Link>
       </div>
     </div>
   );

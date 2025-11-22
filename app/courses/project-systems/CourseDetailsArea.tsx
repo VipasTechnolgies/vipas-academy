@@ -41,8 +41,8 @@ export default function SAPPSDetails() {
       "Plan, execute, and monitor projects with SAP PS. Learn WBS structures, networks, budgeting, and billing to ensure projects meet deadlines and budgets efficiently. ",
     course_overview:
       "Master SAP PS to manage project lifecycles end-to-end. Gain practical experience in planning, budgeting, procurement, and integrating with other SAP modules to optimize project performance.",
-    course_duration: "3 Months Course",
-    level: "Beginner to Advanced",
+    course_duration: "2 Months Course",
+    level: "Beginner to Advanced Level",
     Modules_count: 12,
     students_count: 1800,
     rating: 4.7,
@@ -54,7 +54,7 @@ export default function SAPPSDetails() {
     instructor_title: "SAP Certified PS Consultant",
     instructor_image:
       "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100",
-    internship: "3 Months",
+    internship: "1 month",
     image_enroll: "/Enroll-Now.png",
   };
 
@@ -215,25 +215,7 @@ export default function SAPPSDetails() {
                 {course.description}
               </p>
 
-              <div className="flex flex-wrap items-center gap-6 mb-6">
-                <div className="flex items-center gap-2">
-                  <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className={`w-5 h-5 ${
-                          i < Math.floor(course.rating)
-                            ? "fill-yellow-400 text-yellow-400"
-                            : "text-gray-300"
-                        }`}
-                      />
-                    ))}
-                  </div>
-                  <span className="font-semibold text-gray-900">
-                    {course.rating}
-                  </span>
-                </div>
-              </div>
+             
 
               <div className="mb-8 rounded-2xl overflow-hidden">
                 <img
@@ -378,7 +360,7 @@ export default function SAPPSDetails() {
                     </div>
                     <div className="flex items-center gap-3 text-gray-700">
                       <BookOpen className="w-5 h-5 text-gray-400" />
-                      <span>{course.Modules_count} Modules</span>
+                      <span>{course.Modules_count} Lessons</span>
                     </div>
                   </div>
                 </div>
@@ -432,15 +414,7 @@ export default function SAPPSDetails() {
                 </div>
               </div>
 
-              <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">
-                  Share this course:
-                </h3>
-                <button className="w-full border-2 border-gray-300 hover:border-teal-600 text-gray-700 hover:text-teal-600 font-semibold py-3 rounded-lg flex items-center justify-center gap-2 transition-colors">
-                  <Share2 className="w-5 h-5" />
-                  Share Course
-                </button>
-              </div>
+              
             </div>
           </div>
         </div>

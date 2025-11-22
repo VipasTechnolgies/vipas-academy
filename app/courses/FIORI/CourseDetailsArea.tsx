@@ -42,12 +42,11 @@ export default function SAPFioriDetails() {
     course_overview:
       "Learn Fiori Elements, freestyle apps, OData integration, and Launchpad deployment. Build enterprise-ready applications with hands-on exercises reflecting real business needs.",
     price: 199.99,
-    course_duration: "3 Months Course",
-    internship: "3 Months internship",
-    level: "Beginner to Advanced",
+    course_duration: "2 Months Course",
+    internship: "1 Month internship",
+ level: "Beginner to Advanced Level",
     Modules_count: 7,
     students_count: 2100,
-    rating: 4.8,
     reviews_count: 280,
     category: "SAP UI/UX",
     image_url:
@@ -158,38 +157,17 @@ export default function SAPFioriDetails() {
                 {course.description}
               </p>
 
-              <div className="flex flex-wrap items-center gap-6 mb-6">
-                <div className="flex items-center gap-2">
-                  <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className={`w-5 h-5 ${
-                          i < Math.floor(course.rating)
-                            ? "fill-yellow-400 text-yellow-400"
-                            : "text-gray-300"
-                        }`}
-                      />
-                    ))}
-                  </div>
-                  <span className="font-semibold text-gray-900">
-                    {course.rating}
-                  </span>
-                </div>
-                <div className="flex items-center gap-2 text-gray-600"></div>
-              </div>
+          
 
               <div className="flex items-center gap-4 mb-8">
                 <div></div>
               </div>
 
-              <div className="mb-8 rounded-xl overflow-hidden">
-                <Image
+              <div className="mb-8 rounded-2xl overflow-hidden">
+                <img
                   src={course.image_url}
                   alt={course.title}
-                  width={1000}
-                  height={70}
-                  className="w-full h-70 object-cover"
+                  className="w-full h-96 object-cover"
                 />
               </div>
             </div>
@@ -284,7 +262,7 @@ export default function SAPFioriDetails() {
                               key={i}
                               className="px-6 py-4 flex items-center gap-4 hover:bg-gray-50"
                             >
-                              <Play className="w-4 h-4 text-gray-400" />
+                              <Play className="w-4 h-4 text-blue-900" />
                               <span className="text-gray-700">{lesson}</span>
                             </div>
                           ))}
@@ -314,20 +292,20 @@ export default function SAPFioriDetails() {
                   </div>
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center gap-3 text-gray-700">
-                      <Clock className="w-5 h-5 text-gray-400" />
+                      <Clock className="w-5 h-5 text-blue-900" />
                       <span>{course.course_duration}</span>
                     </div>
                     <div className="flex items-center gap-3 text-gray-700">
-                      <Award className="w-5 h-5 text-gray-400" />
+                      <Award className="w-5 h-5 text-blue-900" />
                       <span>{course.internship}</span>
                     </div>
                     <div className="flex items-center gap-3 text-gray-700">
-                      <BarChart3 className="w-5 h-5 text-gray-400" />
+                      <BarChart3 className="w-5 h-5 text-blue-900" />
                       <span>{course.level}</span>
                     </div>
                     <div className="flex items-center gap-3 text-gray-700">
-                      <BookOpen className="w-5 h-5 text-gray-400" />
-                      <span>{course.Modules_count} Modules</span>
+                      <BookOpen className="w-5 h-5 text-blue-900" />
+                      <span>{course.Modules_count} Lessons</span>
                     </div>
                   </div>
                 </div>
