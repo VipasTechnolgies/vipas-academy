@@ -44,14 +44,13 @@ export default function SAPOFBDetails() {
     Course_overview:
       "Master SAP SuccessFactors Onboarding to configure onboarding templates, task workflows, and automated processes. Apply hands-on projects simulating real-world onboarding for employees. ",
     internship: "1 month",
-    level: "Intermediate",
+    level: "",
     Modules_count: 9,
     students_count: 900,
     rating: 4.6,
     reviews_count: 120,
     category: "SAP SuccessFactors",
-    image_url:
-      "/OFB.png",
+    image_url: "/OFB.png",
     instructor_name: "Alice Johnson",
     instructor_title: "SAP Certified SuccessFactors Consultant",
     instructor_image:
@@ -316,12 +315,9 @@ export default function SAPOFBDetails() {
                     </div>
                     <div className="flex items-center gap-3 text-gray-900">
                       <Award className="w-5 h-5 text-gray-900" />
-                      <span>{course.internship}</span>
+                      <span>{course.internship} Internship</span>
                     </div>
-                    <div className="flex items-center gap-3 text-gray-900">
-                      <BarChart3 className="w-5 h-5 text-gray-900" />
-                      <span>{course.level}</span>
-                    </div>
+
                     <div className="flex items-center gap-3 text-gray-900">
                       <BookOpen className="w-5 h-5 text-gray-900" />
                       <span>{course.Modules_count} Lessons</span>
@@ -360,10 +356,12 @@ export default function SAPOFBDetails() {
                 </h3>
                 <div className="space-y-3">
                   {[
-                    "Lifetime access",
-                    "Downloadable resources",
-                    "Certificate of completion",
-                    "Access on mobile and desktop",
+                    "Flexible online & offline classes",
+                    "Industry-expert trainers with 10+ years of SAP experience",
+                    "Job assistance & career guidance",
+                    "Shareable SAP certificate of completion to boost your career profile",
+                    "100% practical,hands-on training & Real-time project exposure",
+                    "Internship & live project opportunities",
                   ].map((item, i) => (
                     <div
                       key={i}

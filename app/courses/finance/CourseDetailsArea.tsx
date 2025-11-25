@@ -77,7 +77,7 @@ export default function SAPFICODetailsArea() {
     course_overview:
       "Master SAP FICO to perform financial accounting, controlling, and reporting tasks. Learn to manage ledgers, cost centers, and assets while linking FI and CO processes across business functions.",
     course_duration: "2 months course",
- level: "Beginner to Advanced Level",
+ level: " ",
     Modules_count: 19,
     students_count: 1890,
     rating: 4.8,
@@ -94,12 +94,15 @@ export default function SAPFICODetailsArea() {
       "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100",
   };
 
+
   const inclusions: Inclusion[] = [
-    { id: "i1", inclusion_text: "Lifetime access to all Modules and updates" },
-    { id: "i2", inclusion_text: "Hands-on exercises with real business data" },
-    { id: "i3", inclusion_text: "Certificate of completion" },
-    { id: "i4", inclusion_text: "Self-paced, 100% online learning" },
-    { id: "i5", inclusion_text: "Access to SAP sandbox environment" },
+    { id: "i1", inclusion_text: "Flexible online & offline classes" },
+    { id: "i2", inclusion_text: "Industry-expert trainers with 10+ years of SAP experience" },
+    { id: "i3", inclusion_text: "Job assistance & career guidance" },
+    { id: "i4", inclusion_text: "Shareable SAP certificate of completion to boost your career profile" },
+    { id: "i5", inclusion_text: "100% practical,hands-on training & Real-time project exposure"},
+    { id: "i6", inclusion_text: "Internship & live project opportunities"},
+
   ];
 
   // SAP FICO Curriculum (Modules)
@@ -478,23 +481,6 @@ export default function SAPFICODetailsArea() {
                 <div className="flex items-center gap-2"></div>
                 <div className="flex items-center gap-2 text-gray-600"></div>
               </div>
-
-              <div className="flex items-center gap-4 mb-8">
-                {/* <img
-                  src={course.instructor_image}
-                  alt={course.instructor_name}
-                  className="w-12 h-12 rounded-full"
-                />
-                <div>
-                  <p className="font-semibold text-gray-900">
-                    {course.instructor_name}
-                  </p>
-                  <p className="text-gray-500 text-sm">
-                    {course.instructor_title}
-                  </p> */}
-                {/* </div> */}
-              </div>
-
               <img
                 src={course.image_url}
                 alt={course.title}
@@ -589,8 +575,8 @@ export default function SAPFICODetailsArea() {
                             key={lesson.id}
                             className="p-4 flex items-center gap-3 hover:bg-gray-50"
                           >
-                            <Play className="w-4 h-4 text-gray-400" />
-                            <span className="text-gray-700">
+                            <Play className="w-4 h-4 text-gray-900" />
+                            <span className="text-gray-900">
                               {lesson.lesson_title}
                             </span>
                           </div>
@@ -615,27 +601,24 @@ export default function SAPFICODetailsArea() {
                         src={course.image_enroll}
                         alt={course.title}
                         width={"400"}
-                        height={300}
-                        className="w-full h-96 object-cover"
+                        height={200}
+                        className="w-full h-76 object-cover"
                       />
                     </span>
                   </div>
 
                   <div className="space-y-3 mb-6">
-                    <div className="flex items-center gap-3 text-gray-700">
-                      <Clock className="w-5 h-5 text-gray-400" />
+                    <div className="flex items-center gap-3 text-gray-900">
+                      <Clock className="w-5 h-5 text-gray-900" />
                       <span>{course.course_duration}</span>
                     </div>
-                    <div className="flex items-center gap-3 text-gray-700">
-                      <Award className="w-5 h-5 text-gray-400" />
+                    <div className="flex items-center gap-3 text-gray-900 ">
+                      <Award className="w-5 h-5 text-gray-900 " />
                       <span>{course.internship} Internship</span>
                     </div>
-                    <div className="flex items-center gap-3 text-gray-700">
-                      <BarChart3 className="w-5 h-5 text-gray-400" />
-                      <span>{course.level}</span>
-                    </div>
-                    <div className="flex items-center gap-3 text-gray-700">
-                      <BookOpen className="w-5 h-5 text-gray-400" />
+                   
+                    <div className="flex items-center gap-3 text-gray-900">
+                      <BookOpen className="w-5 h-5 text-gray-900" />
                       <span>{course.Modules_count} Lessons</span>
                     </div>
                   </div>

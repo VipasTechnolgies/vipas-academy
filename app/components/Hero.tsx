@@ -123,16 +123,7 @@ export default function Hero() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3">
-                <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center">
-                  <Users className="w-6 h-6 text-teal-700" />
-                </div>
-                <div>
-                  <p className="text-2xl font-bold text-gray-900">450K+</p>
-                  <p className="text-sm text-gray-600">Happy Students</p>
-                </div>
               </div>
-            </div>
           </motion.div>
         </div>
       </div>

@@ -43,7 +43,7 @@ export default function DataAnalyticsCourseDetails() {
     course_duration: "2 Months Course",
     internship: "1 Month Internship",
     course_enroll: "/Enroll-Now.png",
- level: "Beginner to Advanced Level",
+ level: " ",
     Modules_count: 18,
     students_count: 1500,
     rating: 4.8,
@@ -435,10 +435,7 @@ export default function DataAnalyticsCourseDetails() {
                       <Award className="w-5 h-5 text-gray-900" />
                       <span>{course.internship}</span>
                     </div>
-                    <div className="flex items-center gap-3 text-gray-900">
-                      <BarChart3 className="w-5 h-5 text-gray-900" />
-                      <span>{course.level}</span>
-                    </div>
+                
                     <div className="flex items-center gap-3 text-gray-900">
                       <BookOpen className="w-5 h-5 text-gray-900" />
                       <span>{course.Modules_count} Lessons</span>
@@ -478,11 +475,11 @@ export default function DataAnalyticsCourseDetails() {
                 </h3>
                 <div className="space-y-3">
                   {[
-                    "Lifetime access",
-                    "30-day money-back guarantee",
-                    "Downloadable resources",
-                    "Certificate of completion",
-                    "Access on mobile and desktop",
+                    "Flexible online & offline classes",
+                    "100% practical, hands-on training & Real-time project exposure",
+                    "Industry-expert trainers with 10+ years of experience",
+                    "Job assistance & career guidance",
+                    "Internship & live project opportunities",
                   ].map((item, i) => (
                     <div
                       key={i}

@@ -12,7 +12,7 @@ const courses = [
     instructor: 'John Smith',
     image: '/ONB.png',
     course_duration: '3 months',
-    level: 'Beginner',
+    level: '',
     url: '/courses/onboarding-course', // static course page
   },
   {
@@ -21,7 +21,7 @@ const courses = [
     instructor: 'Lisa Johnson',
     image: '/EC.png',
     course_duration: '3 months',
-    level: 'Intermediate',
+    level: '',
     url: '/courses/SF-EC',
   },
   {
@@ -30,7 +30,7 @@ const courses = [
     instructor: 'David Wilson',
     image: '/OFB.png',
     course_duration: '3 months',
-    level: 'Advanced',
+    
     url: '/courses/SF-OFB',
   },
 ];

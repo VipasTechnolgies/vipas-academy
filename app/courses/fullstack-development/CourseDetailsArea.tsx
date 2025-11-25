@@ -40,9 +40,9 @@ export default function FullStackCourseDetails() {
       "Learn front-end, back-end, and database technologies to build fully functional web applications. Focus on HTML, CSS, JavaScript, Node.js, React, and databases for real-world projects.",
     course_overview:
       "Master Full Stack Development by building end-to-end web applications. Gain hands-on coding experience with front-end interfaces, server-side logic, and database management. ",
-    course_duration: "2 Months Course",
-    internship: "1 Month Internship",
-    level: "Beginner to Advanced Level",
+    course_duration: "4 Months Course",
+    internship: "2 Month Internship",
+    level: " ",
     Modules_count: 9,
     students_count: 1800,
     rating: 4.9,
@@ -334,10 +334,7 @@ export default function FullStackCourseDetails() {
                       <Award className="w-5 h-5 text-gray-900" />
                       <span>{course.internship}</span>
                     </div>
-                    <div className="flex items-center gap-3 text-gray-900">
-                      <BarChart3 className="w-5 h-5 text-gray-900" />
-                      <span>{course.level}</span>
-                    </div>
+                 
                     <div className="flex items-center gap-3 text-gray-900">
                       <BookOpen className="w-5 h-5 text-gray-900" />
                       <span>{course.Modules_count} Lessons</span>

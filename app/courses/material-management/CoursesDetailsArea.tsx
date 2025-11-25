@@ -74,7 +74,7 @@ export default function SAPMMDetailsArea() {
       "Master the end-to-end material management lifecycle. Apply practical exercises to manage procurement, inventory, vendor data, and stock transfers in realistic business contexts. ",
     price: 199,
     course_duration: "2 months course",
- level: "Beginner to Advanced Level",
+ level: " ",
     internship: "1 month",
     Modules_count: 18,
     students_count: 1245,
@@ -86,23 +86,15 @@ export default function SAPMMDetailsArea() {
     image_enroll: "/Enroll-Now.png",
   };
 
+  
   const inclusions: Inclusion[] = [
-    { id: "i1", inclusion_text: "Lifetime access to all Modules and updates" },
-    {
-      id: "i2",
-      inclusion_text:
-        "Downloadable exercises, sample data, and real-world scenarios",
-    },
-    { id: "i3", inclusion_text: "Shareable certificate of completion" },
-    {
-      id: "i4",
-      inclusion_text: "100% online, self-paced learning with English subtitles",
-    },
-    {
-      id: "i5",
-      inclusion_text:
-        "Practical tips, shortcuts, and best practices from SAP MM experts",
-    },
+    { id: "i1", inclusion_text: "Flexible online & offline classes" },
+    { id: "i2", inclusion_text: "Industry-expert trainers with 10+ years of SAP experience" },
+    { id: "i3", inclusion_text: "Job assistance & career guidance" },
+    { id: "i4", inclusion_text: "Shareable SAP certificate of completion to boost your career profile" },
+    { id: "i5", inclusion_text: "100% practical,hands-on training & Real-time project exposure"},
+    { id: "i6", inclusion_text: "Internship & live project opportunities"},
+
   ];
 
   // SAP MM Curriculum
@@ -750,7 +742,7 @@ export default function SAPMMDetailsArea() {
                       alt={course.title}
                       width={"400"}
                       height={300}
-                      className="w-full h-96 object-cover"
+                      className="w-full h-76 object-cover"
                     />
                   </div>
 
@@ -763,10 +755,7 @@ export default function SAPMMDetailsArea() {
                       <LucideAward className="w-5 h-5 text-gray-900" />
                       <span>{course.internship} Internship</span>
                     </div>
-                    <div className="flex items-center gap-3 text-gray-900">
-                      <BarChart3 className="w-5 h-5 text-gray-900" />
-                      <span>{course.level}</span>
-                    </div>
+                  
                     <div className="flex items-center gap-3 text-gray-900">
                       <BookOpen className="w-5 h-5 text-gray-900" />
                       <span>{course.Modules_count} Lessons</span>

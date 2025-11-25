@@ -76,14 +76,14 @@ const [showModal, setShowModal] = useState(false);
     course_overview:
       "Master AI & ML with hands-on projects, from data preprocessing to building predictive models. Apply algorithms and analytics to solve practical problems across industries. ",
     price: 299,
-    course_duration: "2 Months Course",
- level: "Beginner to Advanced Level",
+    course_duration: "4 Months Course",
+ level: " ",
     Modules_count: 10,
     students_count: 1890,
     course_enroll: "/Enroll-Now.png",
     rating: 4.9,
     reviews_count: 340,
-    internship: "1 Month Internship",
+    internship: "2 Month Internship",
     category: "AI / ML",
     language: "English",
     image_url:
@@ -91,12 +91,14 @@ const [showModal, setShowModal] = useState(false);
    
   };
 
+
   const inclusions: Inclusion[] = [
-    { id: "i1", inclusion_text: "Lifetime access to recorded video Modules" },
-    { id: "i2", inclusion_text: "Downloadable Python notebooks & datasets" },
-    { id: "i3", inclusion_text: "Certificate of completion" },
-    { id: "i4", inclusion_text: "Hands-on projects and assignments" },
-    { id: "i5", inclusion_text: "Guidance on ML model deployment (MLOps)" },
+    { id: "i1", inclusion_text: "Flexible online & offline classes" },
+    { id: "i2", inclusion_text: "Job assistance & career guidance" },
+    { id: "i3", inclusion_text: "Shareable certificate of completion to boost your career profile" },
+    { id: "i4", inclusion_text: "100% practical,hands-on training & Real-time project exposure"},
+    { id: "i5", inclusion_text: "Internship & live project opportunities"},
+
   ];
 
   // AI/ML Curriculum
@@ -643,10 +645,7 @@ const [showModal, setShowModal] = useState(false);
                       <Award className="w-5 h-5 text-gray-900" />
                       <span>{course.internship}</span>
                     </div>
-                    <div className="flex items-center gap-3 text-gray-900">
-                      <BarChart3 className="w-5 h-5 text-gray-900" />
-                      <span>{course.level}</span>
-                    </div>
+                    
                     <div className="flex items-center gap-3 text-gray-900">
                       <BookOpen className="w-5 h-5 text-gray-900" />
                       <span>{course.Modules_count} Lessons</span>

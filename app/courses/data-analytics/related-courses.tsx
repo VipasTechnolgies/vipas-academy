@@ -13,7 +13,7 @@ const courses = [
     image: '/SAC.jpg',
     students: 12450,
     course_duration: '3 months',
-    level: 'Beginner',
+    level: '',
     url: '/courses/SAC', // static course page
   },
   {
@@ -23,7 +23,7 @@ const courses = [
     image: '/FICO.png',
     students: 9800,
     course_duration: '3 months',
-    level: 'Intermediate',
+    level: '',
     url: '/courses/finance',
   },
   {
@@ -33,7 +33,7 @@ const courses = [
     image: '/PS.png',
     students: 15000,
     course_duration: '3 months',
-    level: 'Advanced',
+    level: '',
     url: '/courses/project-systems',
   },
 ];

@@ -42,14 +42,13 @@ export default function SAPONBDetails() {
       "Master SAP SuccessFactors Onboarding to configure onboarding templates, task workflows, and automated processes. Apply hands-on projects simulating real-world onboarding for employees.",
     course_duration: "2 Months Course",
     internship: "1 Month Internship",
-    level: "Intermediate",
+    level: "",
     Modules_count: 10,
     students_count: 1000,
     rating: 4.8,
     reviews_count: 150,
     category: "SAP SuccessFactors",
-    image_url:
-      "/ONB.png",
+    image_url: "/ONB.png",
     instructor_name: "Michael Lee",
     instructor_title: "SAP Certified SuccessFactors Consultant",
     instructor_image:
@@ -186,7 +185,6 @@ export default function SAPONBDetails() {
               <p className="text-gray-600 text-lg font-sora mb-6 leading-relaxed">
                 {course.description}
               </p>
-
 
               <div className="mb-8 rounded-2xl overflow-hidden">
                 <img
@@ -325,10 +323,7 @@ export default function SAPONBDetails() {
                       <Award className="w-5 h-5 text-gray-900" />
                       <span>{course.internship}</span>
                     </div>
-                    <div className="flex items-center gap-3 text-gray-900">
-                      <BarChart3 className="w-5 h-5 text-gray-900" />
-                      <span>{course.level}</span>
-                    </div>
+
                     <div className="flex items-center gap-3 text-gray-900">
                       <BookOpen className="w-5 h-5 text-gray-900" />
                       <span>{course.Modules_count} Lessons</span>
@@ -368,11 +363,12 @@ export default function SAPONBDetails() {
                 </h3>
                 <div className="space-y-3">
                   {[
-                    "Lifetime access",
-                    "30-day money-back guarantee",
-                    "Downloadable resources",
-                    "Certificate of completion",
-                    "Access on mobile and desktop",
+                    "Flexible online & offline classes",
+                    "Industry-expert trainers with 10+ years of SAP experience",
+                    "Job assistance & career guidance",
+                    "Shareable SAP certificate of completion to boost your career profile",
+                    "100% practical,hands-on training & Real-time project exposure",
+                    "Internship & live project opportunities",
                   ].map((item, i) => (
                     <div
                       key={i}
@@ -384,7 +380,6 @@ export default function SAPONBDetails() {
                   ))}
                 </div>
               </div>
-
             </div>
           </div>
         </div>

@@ -12,8 +12,8 @@ const courses = [
     instructor: 'John Smith',
     image: '/AIML.jpg',
     students: 12450,
-    course_duration: '3 months',
-    level: 'Beginner',
+    course_duration: '6 months',
+    level: '',
     url: '/courses/AI-ML', // static course page
   },
   {
@@ -23,7 +23,7 @@ const courses = [
     image: '/FIORI.png',
     students: 9800,
     course_duration: '3 months',
-    level: 'Intermediate',
+    level: '',
     url: '/courses/FIORI',
   },
 

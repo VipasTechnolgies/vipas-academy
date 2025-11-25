@@ -41,11 +41,13 @@ export default function SAPBTPDetails() {
   };
 
   const inclusions: Inclusion[] = [
-    { id: "i1", inclusion_text: "Lifetime access to all Modules and updates" },
-    { id: "i2", inclusion_text: "Hands-on coding in SAP GUI & HANA Studio" },
-    { id: "i3", inclusion_text: "Certificate of completion" },
-    { id: "i4", inclusion_text: "Self-paced, 100% online learning" },
-    { id: "i5", inclusion_text: "Access to SAP sandbox environment" },
+    { id: "i1", inclusion_text: "Flexible online & offline classes" },
+    { id: "i2", inclusion_text: "Industry-expert trainers with 10+ years of SAP experience" },
+    { id: "i3", inclusion_text: "Job assistance & career guidance" },
+    { id: "i4", inclusion_text: "Shareable SAP certificate of completion to boost your career profile" },
+    { id: "i5", inclusion_text: "100% practical,hands-on training & Real-time project exposure"},
+    { id: "i6", inclusion_text: "Internship & live project opportunities"},
+
   ];
 
   const course = {
@@ -54,7 +56,7 @@ export default function SAPBTPDetails() {
       "Learn to build, deploy, and integrate intelligent enterprise applications on SAP’s cloud platform. SAP BTP combines analytics, integration, and development for real-world business solutions. ",
     course_duration: "2 Months Course",
     internship: "1 Month",
- level: "Beginner to Advanced Level",
+ level: " ",
     Modules_count: 11,
     students_count: 2480,
     rating: 4.9,
@@ -377,10 +379,7 @@ export default function SAPBTPDetails() {
                       <Award className="w-5 h-5 text-gray-400" />
                       <span>{course.internship} Internship</span>
                     </div>
-                    <div className="flex items-center gap-3 text-gray-700">
-                      <BarChart3 className="w-5 h-5 text-gray-400" />
-                      <span>{course.level}</span>
-                    </div>
+                   
                     <div className="flex items-center gap-3 text-gray-700">
                       <BookOpen className="w-5 h-5 text-gray-400" />
                       <span>{course.Modules_count} Lessons</span>

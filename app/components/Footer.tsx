@@ -34,7 +34,11 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: Twitter, href: "https://x.com/vipasacademy?s=21", label: "Twitter" },
+    {
+      icon: Twitter,
+      href: "https://x.com/vipasacademy?s=21",
+      label: "Twitter",
+    },
     {
       icon: Instagram,
       href: "https://www.instagram.com/vipas_academy?igsh=cTlyeDFkYXBmNWpq",
@@ -75,9 +79,9 @@ export default function Footer() {
           {/* Company Info */}
           <motion.div variants={staggerItem} className="lg:col-span-2">
             <div className="flex items-center space-x-4 mb-8">
-              <div className="relative w-24 h-24 sm:w-28 sm:h-28 justify-center">
+              <div className="relative w-40 h-50 sm:w-28 sm:h-28 justify-center">
                 <Image
-                  src="/vipas_logo_bg.png"
+                  src="/vipas_logo_white.png"
                   alt="Vipas Academy Logo"
                   fill
                   className="object-contain"
@@ -174,6 +178,7 @@ export default function Footer() {
             <p className="text-white text-sm text-center md:text-left">
               © 2025 Vipas Academy. All rights reserved.
             </p>
+
             <div className="flex items-center gap-4">
               {socialLinks.map((social) => {
                 const Icon = social.icon;
@@ -193,6 +198,10 @@ export default function Footer() {
             </div>
           </div>
         </motion.div>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-4"> 
+          <p className="text-white text-md text-center md:text-left font-semibold"> 
+            Vipas Academy | A brand of Starvance Solutions LLP ( a subsidiary of Vipas Technologies )</p> 
+            </div>
       </div>
     </footer>
   );

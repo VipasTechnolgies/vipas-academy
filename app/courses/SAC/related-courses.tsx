@@ -13,7 +13,7 @@ const courses = [
     image: '/data-analytics.jpg',
     students: 12450,
     course_duration: '3 months',
-    level: 'Beginner',
+    level: '',
     url: '/courses/data-analytics', // static course page
   },
   {
@@ -23,7 +23,7 @@ const courses = [
     image: '/SD.png',
     students: 9800,
     course_duration: '3 months',
-    level: 'Intermediate',
+    level: '',
     url: '/courses/sales-distribution',
   },
   {
@@ -33,7 +33,7 @@ const courses = [
     image: '/PMGM.png',
     students: 15000,
     course_duration: '3 months',
-    level: 'Advanced',
+    
     url: '/courses/SF-PMGM',
   },
 ];

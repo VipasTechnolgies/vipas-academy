@@ -43,7 +43,7 @@ const [showModal, setShowModal] = useState(false);
       "Learn core HR functions, workflows, and integrations while applying skills through hands-on projects simulating real business HR scenarios. ",
     course_duration: "2 Months Course",
     internship: "1 month",
- level: "Beginner to Advanced Level",
+ level: " ",
     Modules_count: 8,
     students_count: 950,
     rating: 4.7,
@@ -311,10 +311,7 @@ const [showModal, setShowModal] = useState(false);
                       <Award className="w-5 h-5 text-gray-400" />
                       <span>{course.internship} Internship</span>
                     </div>
-                    <div className="flex items-center gap-3 text-gray-700">
-                      <BarChart3 className="w-5 h-5 text-gray-400" />
-                      <span>{course.level}</span>
-                    </div>
+                   
                     <div className="flex items-center gap-3 text-gray-700">
                       <BookOpen className="w-5 h-5 text-gray-400" />
                       <span>{course.Modules_count} Lessons</span>
@@ -354,11 +351,12 @@ const [showModal, setShowModal] = useState(false);
                 </h3>
                 <div className="space-y-3">
                   {[
-                    "Lifetime access",
-                    "30-day money-back guarantee",
-                    "Downloadable resources",
-                    "Certificate of completion",
-                    "Access on mobile and desktop",
+                    "Flexible online & offline classes",
+ "Industry-expert trainers with 10+ years of SAP experience" ,
+"Job assistance & career guidance",
+"Shareable SAP certificate of completion to boost your career profile",
+ "100% practical,hands-on training & Real-time project exposure",
+"Internship & live project opportunities"
                   ].map((item, i) => (
                     <div
                       key={i}

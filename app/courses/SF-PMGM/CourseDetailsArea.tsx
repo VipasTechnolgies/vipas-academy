@@ -43,7 +43,7 @@ export default function SAPPMGMDetails() {
       "Master PMGM to configure goal plans, create performance forms, implement continuous performance processes, and integrate with EC and Compensation modules using real-world exercises. ",
     course_duration: "2 Months Course",
     internship: "1 month",
-    level: "Intermediate",
+    level: "",
     Modules_count: 10,
     students_count: 950,
     rating: 4.8,
@@ -330,10 +330,7 @@ export default function SAPPMGMDetails() {
                       <Award className="w-5 h-5 text-gray-400" />
                       <span>{course.internship} Internship</span>
                     </div>
-                    <div className="flex items-center gap-3 text-gray-700">
-                      <BarChart3 className="w-5 h-5 text-gray-400" />
-                      <span>{course.level}</span>
-                    </div>
+                   
                     <div className="flex items-center gap-3 text-gray-700">
                       <BookOpen className="w-5 h-5 text-gray-400" />
                       <span>{course.Modules_count} Lessons</span>
@@ -373,11 +370,12 @@ export default function SAPPMGMDetails() {
                 </h3>
                 <div className="space-y-3">
                   {[
-                    "Lifetime access",
-                    "30-day money-back guarantee",
-                    "Downloadable resources",
-                    "Certificate of completion",
-                    "Access on mobile and desktop",
+                    "Flexible online & offline classes",
+ "Industry-expert trainers with 10+ years of SAP experience" ,
+"Job assistance & career guidance",
+"Shareable SAP certificate of completion to boost your career profile",
+ "100% practical,hands-on training & Real-time project exposure",
+"Internship & live project opportunities"
                   ].map((item, i) => (
                     <div
                       key={i}

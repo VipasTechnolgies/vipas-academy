@@ -45,14 +45,13 @@ export default function SAPRCMDetails() {
     course_duration: "2 Months Course",
     internship: "1 month",
     course_enroll: "/Enroll-Now.png",
- level: "Beginner to Advanced Level",
+    level: " ",
     Modules_count: 12,
     students_count: 1200,
     rating: 4.7,
     reviews_count: 210,
     category: "SAP SuccessFactors",
-    image_url:
-      "/RCM.png",
+    image_url: "/RCM.png",
     instructor_name: "Sarah Johnson",
     instructor_title: "SAP Certified SuccessFactors Consultant",
     instructor_image:
@@ -221,26 +220,7 @@ export default function SAPRCMDetails() {
                 {course.description}
               </p>
 
-              <div className="flex flex-wrap items-center gap-6 mb-6">
-                <div className="flex items-center gap-2">
-                  <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className={`w-5 h-5 ${
-                          i < Math.floor(course.rating)
-                            ? "fill-yellow-400 text-yellow-400"
-                            : "text-gray-300"
-                        }`}
-                      />
-                    ))}
-                  </div>
-                  <span className="font-semibold text-gray-900">
-                    {course.rating}
-                  </span>
-                </div>
-              </div>
-
+            
               <div className="mb-8 rounded-2xl overflow-hidden">
                 <img
                   src={course.image_url}
@@ -373,10 +353,7 @@ export default function SAPRCMDetails() {
                       <Award className="w-5 h-5 text-gray-400" />
                       <span>{course.internship} Internship</span>
                     </div>
-                    <div className="flex items-center gap-3 text-gray-700">
-                      <BarChart3 className="w-5 h-5 text-gray-400" />
-                      <span>{course.level}</span>
-                    </div>
+
                     <div className="flex items-center gap-3 text-gray-700">
                       <BookOpen className="w-5 h-5 text-gray-400" />
                       <span>{course.Modules_count} Lessons</span>
@@ -416,10 +393,12 @@ export default function SAPRCMDetails() {
                 </h3>
                 <div className="space-y-3">
                   {[
-                    "Lifetime access",
-                    "Downloadable resources",
-                    "Certificate of completion",
-                    "Access on mobile and desktop",
+                    "Flexible online & offline classes",
+                    "Industry-expert trainers with 10+ years of SAP experience",
+                    "Job assistance & career guidance",
+                    "Shareable SAP certificate of completion to boost your career profile",
+                    "100% practical,hands-on training & Real-time project exposure",
+                    "Internship & live project opportunities",
                   ].map((item, i) => (
                     <div
                       key={i}

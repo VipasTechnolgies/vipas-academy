@@ -78,16 +78,19 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50"
+            className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm 
+             flex items-start justify-center pt-[80px] z-50"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            onClick={onClose} 
           >
             <motion.div
               className="bg-white rounded-xl shadow-2xl p-8 w-full max-w-lg relative"
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
+              onClick={(e) => e.stopPropagation()}
             >
               {/* Close Button */}
               <button

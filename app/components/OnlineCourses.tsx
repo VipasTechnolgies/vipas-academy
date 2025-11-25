@@ -19,7 +19,7 @@ const courses = [
     image: "/SD.png",
     students: 12450,
     course_duration: "3 months",
-    level: "Beginner",
+    level: "",
     url: "/courses/sales-distribution", 
   },
   {
@@ -29,7 +29,7 @@ const courses = [
     image: "/data-analytics.jpg",
     students: 9800,
     course_duration: "3 months",
-    level: "Intermediate",
+    level: "",
     url: "/courses/data-analytics",
   },
   {
@@ -38,8 +38,8 @@ const courses = [
     instructor: "David Wilson",
     image: "/fullstack-development.jpg",
     students: 15000,
-    course_duration: "3 months",
-    level: "Advanced",
+    course_duration: "6 months",
+    level: "",
     url: "/courses/fullstack-development",
   },
 ];

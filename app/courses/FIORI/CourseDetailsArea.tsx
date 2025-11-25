@@ -44,13 +44,12 @@ export default function SAPFioriDetails() {
     price: 199.99,
     course_duration: "2 Months Course",
     internship: "1 Month internship",
- level: "Beginner to Advanced Level",
+    level: " ",
     Modules_count: 7,
     students_count: 2100,
     reviews_count: 280,
-    category: "SAP UI/UX",
-    image_url:
-      "/FIORI.png",
+    category: "SAP UI5",
+    image_url: "/FIORI.png",
     instructor_name: "Jane Doe",
     instructor_title: "SAP Certified Fiori Consultant",
     instructor_image:
@@ -157,11 +156,7 @@ export default function SAPFioriDetails() {
                 {course.description}
               </p>
 
-          
-
-              <div className="flex items-center gap-4 mb-8">
-                <div></div>
-              </div>
+              <div className="flex items-center gap-4 mb-8"></div>
 
               <div className="mb-8 rounded-2xl overflow-hidden">
                 <img
@@ -299,10 +294,7 @@ export default function SAPFioriDetails() {
                       <Award className="w-5 h-5 text-blue-900" />
                       <span>{course.internship}</span>
                     </div>
-                    <div className="flex items-center gap-3 text-gray-700">
-                      <BarChart3 className="w-5 h-5 text-blue-900" />
-                      <span>{course.level}</span>
-                    </div>
+
                     <div className="flex items-center gap-3 text-gray-700">
                       <BookOpen className="w-5 h-5 text-blue-900" />
                       <span>{course.Modules_count} Lessons</span>
@@ -336,17 +328,18 @@ export default function SAPFioriDetails() {
                 </div>
               </div>
 
-              <div className="bg-white border border-gray-200 rounded-2xl p-6 mb-6 shadow-sm">
+              <div className="bg-white border border-gray-200 rounded-2xl p-6 mb-6 shadow-sm mt-4">
                 <h3 className="text-lg font-bold text-gray-900 mb-4">
                   This Course Includes:
                 </h3>
                 <div className="space-y-3">
                   {[
-                    "Lifetime access",
-                    "30-day money-back guarantee",
-                    "Downloadable resources",
-                    "Certificate of completion",
-                    "Access on mobile and desktop",
+                    "Flexible online & offline classes",
+                    "Industry-expert trainers with 10+ years of SAP experience",
+                    "Job assistance & career guidance",
+                    "Shareable SAP certificate of completion to boost your career profile",
+                    "100% practical,hands-on training & Real-time project exposure",
+                    "Internship & live project opportunities",
                   ].map((item, i) => (
                     <div
                       key={i}

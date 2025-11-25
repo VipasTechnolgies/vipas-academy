@@ -18,7 +18,7 @@ const courses = [
     image: "/ONB.png",
     students: 12450,
     course_duration: "6 months",
-    level: "Beginner",
+    level: "",
     url: "/courses/onboarding-course", // static course page
   },
   {
@@ -28,7 +28,7 @@ const courses = [
     image: "/OFB.png",
     students: 9800,
     course_duration: "6 months",
-    level: "Intermediate",
+    level: "",
     url: "/courses/SF-OFB",
   },
   {
@@ -38,7 +38,7 @@ const courses = [
     image: "/PMGM.png",
     students: 15000,
     course_duration: "6 months",
-    level: "Advanced",
+    level: "",
     url: "/courses/SF-PMGM",
   },
 ];

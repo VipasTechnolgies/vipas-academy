@@ -28,7 +28,7 @@ export default function CourseCard({ course }: { course: Course }) {
           <span className="text-sm bg-blue-900 text-white px-3 py-1 rounded-full">
             {course.category}
           </span>
-          <span className="text-gray-500 text-sm">Beginner</span>
+          <span className="text-gray-500 text-sm"></span>
         </div>
 
         {/* Title */}

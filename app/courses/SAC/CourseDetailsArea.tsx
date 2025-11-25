@@ -44,7 +44,7 @@ export default function SACSAPPlanningDetails() {
     course_duration: "2 Months Course",
     internship: "1 month Internship",
     course_enroll: "/Enroll-Now.png",
-    level: "Beginner to Advanced Level",
+    level: " ",
     Modules_count: 13,
     students_count: 1200,
     rating: 4.9,
@@ -383,10 +383,7 @@ export default function SACSAPPlanningDetails() {
                       <Award className="w-5 h-5 text-gray-900" />
                       <span>{course.internship}</span>
                     </div>
-                    <div className="flex items-center gap-3 text-gray-900">
-                      <BarChart3 className="w-5 h-5 text-gray-900" />
-                      <span>{course.level}</span>
-                    </div>
+             
                     <div className="flex items-center gap-3 text-gray-900">
                       <BookOpen className="w-5 h-5 text-gray-900" />
                       <span>{course.Modules_count} Lessons</span>
@@ -426,11 +423,12 @@ export default function SACSAPPlanningDetails() {
                 </h3>
                 <div className="space-y-3">
                   {[
-                    "Lifetime access",
-                    "30-day money-back guarantee",
-                    "Downloadable resources",
-                    "Certificate of completion",
-                    "Access on mobile and desktop",
+                    "Flexible online & offline classes",
+ "Industry-expert trainers with 10+ years of SAP experience" ,
+"Job assistance & career guidance",
+"Shareable SAP certificate of completion to boost your career profile",
+ "100% practical,hands-on training & Real-time project exposure",
+"Internship & live project opportunities"
                   ].map((item, i) => (
                     <div
                       key={i}

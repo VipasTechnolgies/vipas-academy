@@ -42,7 +42,7 @@ export default function SAPPSDetails() {
     course_overview:
       "Master SAP PS to manage project lifecycles end-to-end. Gain practical experience in planning, budgeting, procurement, and integrating with other SAP modules to optimize project performance.",
     course_duration: "2 Months Course",
-    level: "Beginner to Advanced Level",
+    level: " ",
     Modules_count: 12,
     students_count: 1800,
     rating: 4.7,
@@ -341,7 +341,7 @@ export default function SAPPSDetails() {
                         alt={course.title}
                         width={"400"}
                         height={300}
-                        className="w-full h-96 object-cover"
+                        className="w-full h-76 object-cover"
                       />
                     </span>
                   </div>
@@ -354,10 +354,7 @@ export default function SAPPSDetails() {
                       <Award className="w-5 h-5 text-gray-400" />
                       <span>{course.internship} Internship</span>
                     </div>
-                    <div className="flex items-center gap-3 text-gray-700">
-                      <BarChart3 className="w-5 h-5 text-gray-400" />
-                      <span>{course.level}</span>
-                    </div>
+                   
                     <div className="flex items-center gap-3 text-gray-700">
                       <BookOpen className="w-5 h-5 text-gray-400" />
                       <span>{course.Modules_count} Lessons</span>
@@ -397,11 +394,12 @@ export default function SAPPSDetails() {
                 </h3>
                 <div className="space-y-3">
                   {[
-                    "Lifetime access",
-                    "30-day money-back guarantee",
-                    "Downloadable resources",
-                    "Certificate of completion",
-                    "Access on mobile and desktop",
+                    "Flexible online & offline classes",
+ "Industry-expert trainers with 10+ years of SAP experience" ,
+"Job assistance & career guidance",
+"Shareable SAP certificate of completion to boost your career profile",
+ "100% practical,hands-on training & Real-time project exposure",
+"Internship & live project opportunities"
                   ].map((item, i) => (
                     <div
                       key={i}
