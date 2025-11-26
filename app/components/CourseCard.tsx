@@ -46,12 +46,14 @@ export default function CourseCard({ course }: { course: Course }) {
         </div>
 
         {/* Enroll Button */}
+     
         <Link
           href={course.url}
-          className="inline-block w-full text-center bg-gradient-to-r from-blue-900 to-indigo-900 text-white font-medium py-2.5 rounded-full hover:scale-[1.02] transition-all"
+          className="inline-block text-center w-full bg-gradient-to-r from-teal-600 to-teal-600 text-white font-medium py-2.5 rounded-full hover:scale-[1.02] transition-all"
         >
-          Enroll Now
+          View Course Details
         </Link>
+    
       </div>
     </div>
   );

@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import Breadcrumb from "@/app/components/breadcrumb";
 import DownloadSyllabusModal from "@/app/components/DownloadSyllabusModal";
+import EnrollModal from "@/app/components/Enroll-Now";
 
 interface Lesson {
   id: string;
@@ -85,7 +86,7 @@ export default function SAPABAPDetailsArea() {
     students_count: 1720,
     rating: 4.9,
     reviews_count: 310,
-    internship: "3 Months ",
+    internship: "1 Month ",
     category: "SAP",
     language: "English",
     image_url: "/ABAP.png",
@@ -98,12 +99,19 @@ export default function SAPABAPDetailsArea() {
 
   const inclusions: Inclusion[] = [
     { id: "i1", inclusion_text: "Flexible online & offline classes" },
-    { id: "i2", inclusion_text: "Industry-expert trainers with 10+ years of SAP experience" },
+    {
+      id: "i2",
+      inclusion_text:
+        "Industry-expert trainers with 10+ years of SAP experience",
+    },
     { id: "i3", inclusion_text: "Job assistance & career guidance" },
     { id: "i4", inclusion_text: "SAP certification preparation support" },
-    { id: "i5", inclusion_text: "100% practical,hands-on training & Real-time project exposure"},
-    { id: "i6", inclusion_text: "Internship & live project opportunities"},
-
+    {
+      id: "i5",
+      inclusion_text:
+        "100% practical,hands-on training & Real-time project exposure",
+    },
+    { id: "i6", inclusion_text: "Internship & live project opportunities" },
   ];
 
   // ABAP Curriculum
@@ -402,6 +410,10 @@ export default function SAPABAPDetailsArea() {
     { label: course.title },
   ];
 
+  function setIsOpen(arg0: boolean): void {
+    throw new Error("Function not implemented.");
+  }
+
   return (
     <div className="min-h-screen mt-9 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -544,7 +556,7 @@ export default function SAPABAPDetailsArea() {
                       <Award className="w-5 h-5 text-gray-400" />
                       <span>{course.internship} Internship</span>
                     </div>
-                   
+
                     <div className="flex items-center gap-3 text-gray-700">
                       <BookOpen className="w-5 h-5 text-gray-400" />
                       <span>{course.Modules_count} Lessons</span>
@@ -553,13 +565,8 @@ export default function SAPABAPDetailsArea() {
                 </div>
 
                 <div className="space-y-3">
-                  <button
-                    onClick={() => router.push("/contact")}
-                    className="w-full bg-teal-600 hover:bg-blue-900 text-white font-semibold py-3.5 rounded-lg transition-colors flex items-center justify-center gap-2"
-                  >
-                    <PhoneCall className="w-5 h-5" />
-                    Enroll Now
-                  </button>
+                  <EnrollModal />
+
                   <button
                     className="bg-teal-600 hover:text-white hover:bg-blue-900 text-white px-8 w-full py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2"
                     onClick={() => setShowModal(true)}

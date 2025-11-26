@@ -23,6 +23,7 @@ import Breadcrumb from "@/app/components/breadcrumb";
 import DownloadSyllabusModal from "@/app/components/DownloadSyllabusModal";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import EnrollModal from "@/app/components/Enroll-Now";
 interface Lesson {
   id: string;
   lesson_title: string;
@@ -83,7 +84,7 @@ const [showModal, setShowModal] = useState(false);
     course_enroll: "/Enroll-Now.png",
     rating: 4.9,
     reviews_count: 340,
-    internship: "2 Month Internship",
+    internship: "2 Months Internship",
     category: "AI / ML",
     language: "English",
     image_url:
@@ -654,13 +655,7 @@ const [showModal, setShowModal] = useState(false);
                 </div>
 
                 <div className="space-y-3">
-                  <button
-                    onClick={() => router.push("/contact")}
-                    className="w-full bg-teal-600 hover:bg-blue-900 text-white font-semibold py-3.5 rounded-lg transition-colors flex items-center justify-center gap-2"
-                  >
-                    <PhoneCall className="w-5 h-5" />
-                    Enroll Now
-                  </button>
+                     <EnrollModal />
                   <button
                     className="bg-teal-500 hover:text-white hover:bg-blue-900 text-white px-8 w-full py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2"
                     onClick={() => setShowModal(true)}

@@ -67,19 +67,18 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-900 text-gray-300 overflow-x-hidden">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <footer className="bg-gray-900 text-gray-300 overflow-x-hidden px-6">
+      <div className="container mx-auto ">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={staggerContainer}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12" // <-- Updated
         >
-          {/* Company Info */}
           <motion.div variants={staggerItem} className="lg:col-span-2">
             <div className="flex items-center space-x-4 mb-8">
-              <div className="relative w-40 h-50 sm:w-28 sm:h-28 justify-center">
+              <div className="relative w-40 h-40 flex justify-center items-center">
                 <Image
                   src="/vipas_logo_white.png"
                   alt="Vipas Academy Logo"
@@ -88,7 +87,8 @@ export default function Footer() {
                   priority
                 />
               </div>
-              <span className="text-2xl sm:text-3xl font-bold text-white">
+
+              <span className="text-3xl sm:text-3xl  font-bold text-white">
                 Vipas Academy
               </span>
             </div>
@@ -198,10 +198,12 @@ export default function Footer() {
             </div>
           </div>
         </motion.div>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-4"> 
-          <p className="text-white text-md text-center md:text-left font-semibold"> 
-            Vipas Academy | A brand of Starvance Solutions LLP ( a subsidiary of Vipas Technologies )</p> 
-            </div>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-4">
+          <p className="text-white text-md text-center md:text-left font-semibold">
+            Vipas Academy | A brand of Starvance Solutions LLP ( a subsidiary of
+            Vipas Technologies )
+          </p>
+        </div>
       </div>
     </footer>
   );
