@@ -68,7 +68,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-900 text-gray-300 overflow-x-hidden px-6">
-      <div className="container mx-auto ">
+      <div className="container mx-auto  mt-6 ">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -198,13 +198,15 @@ export default function Footer() {
             </div>
           </div>
         </motion.div>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-4">
+       
+      </div>
+       <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-4  mt-4">
           <p className="text-white text-md text-center md:text-left font-semibold">
             Vipas Academy | A brand of Starvance Solutions LLP ( a subsidiary of
             Vipas Technologies )
           </p>
         </div>
-      </div>
     </footer>
+    
   );
 }
