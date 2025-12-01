@@ -77,21 +77,22 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
       <Toaster position="top-right" />
       <AnimatePresence>
         {isOpen && (
-          <motion.div
-            className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm 
-             flex items-start justify-center pt-[80px] z-50"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={onClose} 
-          >
-            <motion.div
-              className="bg-white rounded-xl shadow-2xl p-8 w-full max-w-lg relative"
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              onClick={(e) => e.stopPropagation()}
-            >
+         <motion.div
+  className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm 
+             z-50 overflow-y-auto flex items-center justify-center py-10"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  exit={{ opacity: 0 }}
+  onClick={onClose}
+>
+  <motion.div
+    className="bg-white rounded-xl shadow-2xl p-8 w-full max-w-lg relative
+               max-h-[95vh] overflow-y-auto"
+    initial={{ scale: 0.9, opacity: 0 }}
+    animate={{ scale: 1, opacity: 1 }}
+    exit={{ scale: 0.9, opacity: 0 }}
+    onClick={(e) => e.stopPropagation()}
+  >
               {/* Close Button */}
               <button
                 onClick={onClose}

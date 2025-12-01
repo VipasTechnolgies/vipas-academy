@@ -2,21 +2,20 @@
 
 import { useEffect, useState } from "react";
 
-import Navbar from '@/app/components/Navbar';
-import Hero from '@/app/components/Hero';
-import TopCategories from '@/app/components/TopCategories';
-import About from '@/app/components/About';
-import OnlineCourses from '@/app/components/OnlineCourses';
-import Testimonials from '@/app/components/Testimonials';
-import Footer from '@/app/components/Footer';
+import Navbar from "@/app/components/Navbar";
+import Hero from "@/app/components/Hero";
+import TopCategories from "@/app/components/TopCategories";
+import About from "@/app/components/About";
+import OnlineCourses from "@/app/components/OnlineCourses";
+import Testimonials from "@/app/components/Testimonials";
+import Footer from "@/app/components/Footer";
 import ContactFormModal from "@/app/components/expertguidence"; // IMPORTANT
 import SapOverview from "@/app/components/sap-overview";
-import WhyChooseUs from '@/app/components/study'; 
+import WhyChooseUs from "@/app/components/study";
 import ScrollingMarquee from "@/app/components/scrolling";
-import OurSponsors from './components/our-sponsers';
+import OurSponsors from "./components/our-sponsers";
 import ContactForm from "@/app/components/contact";
 export default function Home() {
-
   const [openPopup, setOpenPopup] = useState(false);
 
   useEffect(() => {
@@ -30,8 +29,12 @@ export default function Home() {
   return (
     <main>
       {/* Auto Popup Trigger */}
-      <ContactFormModal isOpen={openPopup} onClose={() => setOpenPopup(false)}  />
+
       <Navbar />
+      <ContactFormModal
+        isOpen={openPopup}
+        onClose={() => setOpenPopup(false)}
+      />
       <Hero />
       <ScrollingMarquee />
       <SapOverview />
@@ -41,7 +44,7 @@ export default function Home() {
       <WhyChooseUs />
       <Testimonials />
       <OurSponsors />
-    <ContactForm />
+      <ContactForm />
       <Footer />
     </main>
   );
