@@ -74,7 +74,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
 
   return (
     <>
-      <Toaster position="top-right" />
+      <Toaster />
       <AnimatePresence>
         {isOpen && (
          <motion.div

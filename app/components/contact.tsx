@@ -92,9 +92,6 @@ export default function ContactPage() {
     <>
      
       <Toaster />
-
-      {/* Hero Section */}
-     
   
       {/* Contact Details + Form */}
       <section className="py-20 bg-white">
