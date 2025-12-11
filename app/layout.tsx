@@ -24,11 +24,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Google Search Console */}
-        <meta
-          name="google-site-verification"
-          content="Myhbp5mLm3RcvrGCRKXV-1tE2t64NDZVMy27s-K5rXY"
-        />
-
+       <meta 
+       name="google-site-verification" 
+       content="Mybhp5mLm3RcvrGCRKXV-1tE2t64NDZVMy27s-K5rXY" />
         {/* Google Tag Manager (HEAD) */}
         <Script id="gtm-head" strategy="afterInteractive">
           {`
