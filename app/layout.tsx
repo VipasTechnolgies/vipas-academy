@@ -7,9 +7,9 @@ import WhatsAppButton from "@/app/components/whatsappbutton";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Vipas Academy-SAP, AI/ML & IT Training Institute",
+  title: " Best AI/ML & SAP Course in Tirupati | Upskill at Vipas Academy",
   description:
-    "Vipas Academy offers training in SAP, AI/ML and IT courses with real-time projects, expert trainers and strong placement support.",
+  " Upskill with the Best AI/ML & SAP courses in Tirupati at Vipas Academy. Industry-focused training, real-time projects, expert trainers & placement support.",
   icons: {
     icon: "/favicon.png",
   },

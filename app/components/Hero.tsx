@@ -44,7 +44,8 @@ export default function Hero() {
               Shape
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-900">
                 What&apos;s Next
-              </span>
+              </span>{" "}
+              with IT Courses
             </motion.h1>
 
             <motion.p
@@ -55,8 +56,8 @@ export default function Hero() {
               transition={{ delay: 0.2 }}
               className="text-lg text-gray-800 mb-8 leading-relaxed"
             >
-              At Vipas Academy, we don&apos;t just teach technology - we
-              transform learners into innovators.
+              At Vipas Academy, we go beyond teaching technology to build
+              future-ready professionals.
             </motion.p>
             <motion.p
               initial="hidden"
@@ -66,10 +67,13 @@ export default function Hero() {
               transition={{ delay: 0.2 }}
               className="text-lg text-gray-800 mb-8 leading-relaxed text-justify"
             >
-              Our training is powered by expert mentors, hands-on projects, and
-              career-driven learning paths. Whether you&apos;re beginning your
-              journey in IT or upgrading your skills for the next leap, we help
-              you Shape What&apos;s Next in the world of technology.
+              Our industry-focused IT courses,
+              including SAP and AI/ML courses, are delivered by expert mentors
+              through hands-on projects and real-world learning. Whether you are
+              starting your IT career or upgrading your skills, our
+              career-oriented training aligns with current industry
+              demands.Upskill with confidence and shape what’s next with
+              practical, job-ready tech skills at Vipas Academy.
             </motion.p>
 
             <motion.div
@@ -88,7 +92,7 @@ export default function Hero() {
                 <Play className="w-5 h-5" />
               </button>
               <button
-                   onClick={() => router.push("/contact")}
+                onClick={() => router.push("/contact")}
                 className="bg-blue-900 text-white px-8 py-4 rounded-xl font-semibold border-2 border-blue-900 hover:border-blue-900 hover:text-white transition-all duration-300"
               >
                 Enroll Now
@@ -123,7 +127,7 @@ export default function Hero() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              </div>
+            </div>
           </motion.div>
         </div>
       </div>

@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { Play, Users, Activity,Layers  } from 'lucide-react';
-import { fadeInUp, fadeInLeft } from '@/lib/animations';
+import { motion } from "framer-motion";
+import { Play, Users, Activity, Layers } from "lucide-react";
+import { fadeInUp, fadeInLeft } from "@/lib/animations";
 import Image from "next/image";
 
 export default function SapOverview() {
@@ -30,7 +30,7 @@ export default function SapOverview() {
               variants={fadeInUp}
             >
               <span className="inline-block px-4 py-2 bg-blue-900 text-white rounded-full text-xl font-semibold mb-8">
-                SAP Training Overview
+                SAP Course Overview
               </span>
             </motion.div>
 
@@ -42,10 +42,17 @@ export default function SapOverview() {
               transition={{ delay: 0.2 }}
               className="text-lg text-gray-900 mb-8 font-sans leading-relaxed text-justify"
             >
-              At Vipas Academy, our SAP Training Program opens the door to one of the most in-demand careers in today&apos;s digital world. Designed for students and professionals alike, this program helps you master real-time business processes using SAP S/4HANA - the intelligent ERP 
-              powering global enterprises. Get hands-on experience across key SAP modules like FICO, MM, SD, HCM, and ABAP, guided by certified consultants who&apos;ve worked on real implementation projects. 
-              Learn through live projects, case studies, and interactive sessions that make complex concepts easy to understand and apply. 
-              Our mission is simple — to make you job-ready, confident in SAP, and equipped for both implementation and support roles. Step into the world of SAP with Vipas Academy and start building a future where technology and business come together. 
+              At Vipas Academy, our SAP Course in Tirupati opens the door to one
+              of the most in-demand careers in today’s digital world. Designed
+              for both students and working professionals, this program helps
+              you master real-time business processes using SAP S/4HANA, the
+              intelligent ERP used by global enterprises. Gain hands-on
+              experience in key SAP modules such as FICO, MM, SD, HCM, and ABAP,
+              guided by certified consultants with real implementation
+              expertise. Learn through live projects, case studies, and
+              interactive sessions that simplify complex concepts. Our goal is
+              to make you job-ready, confident, and prepared for SAP
+              implementation and support roles
             </motion.p>
 
             <motion.div
@@ -60,19 +67,25 @@ export default function SapOverview() {
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-2">
                   <Activity className="w-6 h-6 text-blue-900 " />
                 </div>
-                <p className="text-sm text-gray-900 mt-5">Hands-On SAP Projects</p>
+                <p className="text-sm text-gray-900 mt-5">
+                  Hands-On SAP Projects
+                </p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mx-auto mb-2">
                   <Layers className="w-6 h-6 text-teal-600" />
                 </div>
-                <p className="text-sm text-gray-900 mt-5">Industry-Oriented Learning</p>
+                <p className="text-sm text-gray-900 mt-5">
+                  Industry-Oriented Learning
+                </p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-2">
                   <Users className="w-6 h-6 text-blue-800" />
                 </div>
-                <p className="text-sm text-gray-900 mt-5">Career Guidance & Mentorship</p>
+                <p className="text-sm text-gray-900 mt-5">
+                  Career Guidance & Mentorship
+                </p>
               </div>
             </motion.div>
           </div>

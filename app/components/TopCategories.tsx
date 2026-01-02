@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Code, Briefcase, BarChart2} from "lucide-react";
+import { Code, Briefcase, BarChart2 } from "lucide-react";
 import ContactModal from "@/app/components/contactmodal";
 import {
   fadeInUp,
@@ -10,9 +10,24 @@ import {
 } from "@/lib/animations";
 
 const categories = [
-  { name: "Development", icon: Code, courses: 3, color: "from-blue-900 to-blue-900" },
-  { name: "SAP", icon: Briefcase, courses: 13, color: "from-teal-900 to-teal-600" },
-  { name: "Data Analytics", icon: BarChart2 , courses: 2, color: "from-blue-900 to-blue-600" },
+  {
+    name: "Web Development Course",
+    icon: Code,
+    courses: 3,
+    color: "from-blue-900 to-blue-900",
+  },
+  {
+    name: "SAP Course",
+    icon: Briefcase,
+    courses: 13,
+    color: "from-teal-900 to-teal-600",
+  },
+  {
+    name: "Data Analytics Course",
+    icon: BarChart2,
+    courses: 2,
+    color: "from-blue-900 to-blue-600",
+  },
 ];
 
 export default function TopCategories() {
@@ -30,14 +45,13 @@ export default function TopCategories() {
             TOP CATEGORIES
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-900">
-              You want to Learn
+              Top IT Courses to Learn
             </span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Explore our most popular course categories and find the perfect
-            learning path for your goals.
+            Explore our most popular high-paying IT course categories and find
+            the perfect learning path for your goals
           </p>
         </motion.div>
 
@@ -65,8 +79,9 @@ export default function TopCategories() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-900 transition-colors">
                   {category.name}
                 </h3>
-                <p className="text-gray-600">{category.courses} Courses Available</p>
-              
+                <p className="text-gray-600">
+                  {category.courses} Courses Available
+                </p>
               </motion.div>
             );
           })}
@@ -83,6 +98,10 @@ export default function TopCategories() {
         >
           <ContactModal />
         </motion.div>
+        <p className="text-center mt-10 font-semibold text-gray-600">
+          We guide you in choosing the right course based on your skills,
+          interests & career goals.
+        </p>
       </div>
     </section>
   );
