@@ -9,7 +9,7 @@ import About from "@/app/components/About";
 import OnlineCourses from "@/app/components/OnlineCourses";
 import Testimonials from "@/app/components/Testimonials";
 import Footer from "@/app/components/Footer";
-import ContactFormModal from "@/app/components/expertguidence"; // IMPORTANT
+import ContactFormModal from "@/app/components/expertguidence"; 
 import SapOverview from "@/app/components/sap-overview";
 import WhyChooseUs from "@/app/components/study";
 import ScrollingMarquee from "@/app/components/scrolling";
